@@ -45,5 +45,5 @@ Il est egalement possible de créer un filtre sur les données. On peut voir cel
 
 **graphName :** le nom de la page HTML que l'on va generer
 
-**graphType :** le type de graphique HTML *les differents type de graphiques sont trouvables dans le diagramme de classe dans EnumType*  
+**graphType :** le type de graphique *les differents type de graphiques sont trouvables dans le diagramme de classe dans EnumType*  
 [class Diagram](pictures/classDiag.png)
