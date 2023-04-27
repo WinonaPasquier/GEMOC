@@ -68,6 +68,21 @@ Il est egalement possible de créer un filtre sur les données. On peut voir cel
 <extension> ::= 'csv'
 <parametres_graph> ::=<nom_graph><type_graph>
 <nom_graph> ::= 'graphName :' <chaine_de_caracteres>
-<type_graph> ::= 'graphType :' <type_de_graphique>
+<type_graph> ::= 'graphType :' <type_graph>
+<type_graph> ::= 'line'|'pie'|'doughnut'|'scatter'|'bubble'|'radar'|'polarArea'
 ```
+`<programme>` : represente l'ensemble du programme.  
+`<colonne>` : représente la colonne.  
+`<fichier>` : représente le fichier.  
+`<graphique>` : représente le graphique.  
+`<nom_colonne>` : représente le nom de la colonne à afficher, suivi d'un éventuel filtre.  
+`<filtre>` : représente un filtre qui peut etre appliqué à une colonne spécifique.  
+`<comparateur>` : représente l'opérateur de comparaison.  
+`<chemin_fichier>` : représente le chemin d'accès complet au fichier csv à utiliser.  
+`<nom_fichier>` : représente le nom du fichier de données.  
+`<nom_dossier>` : représente le nom du dossier contenant le fichier.  
+`<extension>` : représente l'extension du fichier de données.  
+`<parametres_graph>` : représente les paramètres du graphique.  
+`<nom_graph>` : représente le nom de la page.  
+`<type_graph>` : représente le type de graphique à générer.  
 [le fichier myDsl.xtext](l3IAProjectHTML/src/l3IAProjectHTML/MyDsl.xtext)
