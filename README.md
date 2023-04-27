@@ -75,9 +75,9 @@ Il est egalement possible de créer un filtre sur les données. On peut voir cel
 `<fileloader>` : représente le fichier.  
 `<graph>` : représente le graphique.  
 `<nom_colonne>` : représente le nom de la colonne à afficher, suivi d'un éventuel filtre.  
-`<abs>` : représente si la colonne est en abscisse
+`<abs>` : représente si la colonne est en abscisse.  
 `<comparaison>` : représente l'opérateur de comparaison.  
-`<elementComparaison>` : représente la valeur de comparaison.
+`<elementComparaison>` : représente la valeur de comparaison.  
 `<path>` : représente le chemin d'accès complet au fichier csv à utiliser.  
 `<nom_dossier>` : représente le nom du dossier contenant le fichier.  
 `<nom_fichier>` : représente le nom du fichier de données.  
