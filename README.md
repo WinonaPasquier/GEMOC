@@ -37,7 +37,7 @@ Graph {
 Pour definir quelle est la colonne qui doit etre en absciise il suffit d'ajouter **, abs** apres le nom de la colonne.  
 Il est egalement possible de créer un filtre sur les données. On peut voir cela dans l'exemple 1. Dans cette exemple les données qui seront selectionnées seront les lignes où la colonne Origin correspond à US
 
-**File :** le chemin d'acces au fichier CSV 
+**File :** le chemin d'acces au fichier CSV *Il faut bien respecter le format du fichier CSV*
 
 **graphName :** le nom de la page HTML que l'on va generer
 
