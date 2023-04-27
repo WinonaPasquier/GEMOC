@@ -1,7 +1,12 @@
 # GEMOC Project
 
-## Exemple de synthaxes
-Pour pouvoir generer un graphique HTML il suffit de suivre la synthaxe suivante :
+## Exemple de synthaxe
+
+Avant de commencer il faut que l'extension du fichier soient sous la forme **myFile.projetHTML** pour pouvoir générer le fichier HTML.
+
+Pour generer notre fichier HTML il suffit de suivre la synthaxe suivante :
+
+
 
 ### Exemple 1
 ```
