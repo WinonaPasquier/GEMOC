@@ -1,6 +1,6 @@
 # GEMOC Project
 
-## Exemple de synthaxe
+## Exemple de syntaxe
 
 Avant de commencer il faut que l'extension du fichier soit sous la forme **myFile.projetHTML** pour pouvoir générer le fichier HTML.
 
@@ -39,7 +39,7 @@ Graph {
 [Code HTML](scenario2.html)  
 [Graphique](pictures/scenario2.png)
 
-## Explication de la synthaxe
+## Explication de la syntaxe
 
 **Column :** le nom de la colonne. *Il faut que les noms des colonnes soient identiques aux noms dans le fichier CSV. Attention il ne faut pas que la colonne est un nom avec des espaces.*  
 Pour définir quelle est la colonne qui doit être en abscisse il suffit d'ajouter **, abs** apres le nom de la colonne. *On ne peut définir qu'une seule colonne avec l'attribut abs*  
@@ -86,7 +86,7 @@ Il est également possible de créer un filtre sur les données. On peut voir ce
 `<graphtype>` : Représente le type de graphique à générer.  
 [le fichier myDsl.xtext](l3IAProjectHTML/src/l3IAProjectHTML/MyDsl.xtext)
 
-## Explication code :
+## Explication du code
 
 Pour pouvoir générer notre fichier HTML on va récupérer toutes les données fournies par l'utilisateur.  
 Ensuite on va récupérer toutes les données de notre fichier CSV.  
