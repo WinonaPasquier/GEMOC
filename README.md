@@ -90,4 +90,5 @@ Il est egalement possible de créer un filtre sur les données. On peut voir cel
 
 Pour pouvoir generer notre fichier HTML on va recuperer toutes les données fournis par l'utilisateur.  
 Ensuite on va recuperer toutes les données de notre fichier csv.  
-Puis on va selectionner uniquement les données que l'on souhaite utiliser pour créer notre graphique. Ces données vont etre ajouter dans notre fichier JSON. C'est dans ce JSON où il y a toutes les données a afficher.
+Puis on va selectionner uniquement les données que l'on souhaite utiliser pour créer notre graphique. Ces données vont etre ajouter dans notre fichier JSON. C'est dans ce JSON où il y a toutes les données a afficher.  
+[le fichier myDslGenerator.xtend](l3IAProjectHTML/src/l3IAProjectHTML/generator/MyDslGenerator.xtend)
