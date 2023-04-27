@@ -1,4 +1,4 @@
-# GEMOC
+# GEMOC Project
 
 ## Exemple de synthaxes
 Pour pouvoir generer un graphique HTML il suffit de suivre la synthaxe suivante :
@@ -15,8 +15,9 @@ Graph {
 	graphType : bar
 	}
   ```
-*Cet synthaxe permet de generer le diagramme du scenario1*
-
+*Cet synthaxe permet de generer le diagramme du scenario1*  
+[Code HTML](scenario1.html)  
+[Diagramme](pictures/scenario1.png)
 ### Exemple 2
 ```
 Column : 'Country',abs
@@ -29,12 +30,14 @@ Graph {
 	graphType : line
 	}
 ```
-*Cet synthaxe permet de generer le diagramme du scenario2*
+*Cet synthaxe permet de generer le diagramme du scenario2*  
+[Code HTML](scenario2.html)  
+[Diagramme](pictures/scenario2.png)
 
 ## Explication de la synthaxe
 
 **Column :** le nom de la colonne *il faut que le nom des colonnes soient identique au nom dans le fichier csv. Attention il ne faut pas que la colonne est un nom avec des espaces.*  
-Pour definir quelle est la colonne qui doit etre en absciise il suffit d'ajouter **, abs** apres le nom de la colonne.  
+Pour definir quelle est la colonne qui doit etre en abscisse il suffit d'ajouter **, abs** apres le nom de la colonne.  
 Il est egalement possible de créer un filtre sur les données. On peut voir cela dans l'exemple 1. Dans cette exemple les données qui seront selectionnées seront les lignes où la colonne Origin correspond à US
 
 **File :** le chemin d'acces au fichier CSV *Il faut bien respecter le format du fichier*
@@ -42,15 +45,5 @@ Il est egalement possible de créer un filtre sur les données. On peut voir cel
 
 **graphName :** le nom de la page HTML que l'on va generer
 
-**graphType :** le type de graphique HTML *les differents type de graphiques sont trouvables dans le diagramme de classe dans EnumType*
-
-## Diagramme de classe du projet
-![classDiag](pictures/classDiag.png)
-
-
-
-## Resultats des differents exemples
-### Resultat Exemple 1
-![scenario1](pictures/scenario1.jpg)
-### Resulat Exemple 2
-![scenario2](pictures/scenario2.jpg)
+**graphType :** le type de graphique HTML *les differents type de graphiques sont trouvables dans le diagramme de classe dans EnumType*  
+[class Diagram](pictures/classDiag.png)
