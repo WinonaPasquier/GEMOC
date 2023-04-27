@@ -21,52 +21,52 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link fRUnivCoteAzurL3IAProjectHTML.impl.GraphImpl#getType <em>Type</em>}</li>
- *   <li>{@link fRUnivCoteAzurL3IAProjectHTML.impl.GraphImpl#getName <em>Name</em>}</li>
+ *   <li>{@link fRUnivCoteAzurL3IAProjectHTML.impl.GraphImpl#getGraphtype <em>Graphtype</em>}</li>
+ *   <li>{@link fRUnivCoteAzurL3IAProjectHTML.impl.GraphImpl#getGraphname <em>Graphname</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class GraphImpl extends MinimalEObjectImpl.Container implements Graph {
 	/**
-	 * The default value of the '{@link #getType() <em>Type</em>}' attribute.
+	 * The default value of the '{@link #getGraphtype() <em>Graphtype</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getType()
+	 * @see #getGraphtype()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final EnumType TYPE_EDEFAULT = EnumType.LINE;
+	protected static final EnumType GRAPHTYPE_EDEFAULT = EnumType.LINE;
 
 	/**
-	 * The cached value of the '{@link #getType() <em>Type</em>}' attribute.
+	 * The cached value of the '{@link #getGraphtype() <em>Graphtype</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getType()
+	 * @see #getGraphtype()
 	 * @generated
 	 * @ordered
 	 */
-	protected EnumType type = TYPE_EDEFAULT;
+	protected EnumType graphtype = GRAPHTYPE_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * The default value of the '{@link #getGraphname() <em>Graphname</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
+	 * @see #getGraphname()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String NAME_EDEFAULT = null;
+	protected static final String GRAPHNAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * The cached value of the '{@link #getGraphname() <em>Graphname</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
+	 * @see #getGraphname()
 	 * @generated
 	 * @ordered
 	 */
-	protected String name = NAME_EDEFAULT;
+	protected String graphname = GRAPHNAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -92,8 +92,8 @@ public class GraphImpl extends MinimalEObjectImpl.Container implements Graph {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EnumType getType() {
-		return type;
+	public EnumType getGraphtype() {
+		return graphtype;
 	}
 
 	/**
@@ -101,12 +101,12 @@ public class GraphImpl extends MinimalEObjectImpl.Container implements Graph {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(EnumType newType) {
-		EnumType oldType = type;
-		type = newType == null ? TYPE_EDEFAULT : newType;
+	public void setGraphtype(EnumType newGraphtype) {
+		EnumType oldGraphtype = graphtype;
+		graphtype = newGraphtype == null ? GRAPHTYPE_EDEFAULT : newGraphtype;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FRUnivCoteAzurL3IAProjectHTMLPackage.GRAPH__TYPE,
-					oldType, type));
+			eNotify(new ENotificationImpl(this, Notification.SET, FRUnivCoteAzurL3IAProjectHTMLPackage.GRAPH__GRAPHTYPE,
+					oldGraphtype, graphtype));
 	}
 
 	/**
@@ -114,8 +114,8 @@ public class GraphImpl extends MinimalEObjectImpl.Container implements Graph {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
+	public String getGraphname() {
+		return graphname;
 	}
 
 	/**
@@ -123,12 +123,12 @@ public class GraphImpl extends MinimalEObjectImpl.Container implements Graph {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
+	public void setGraphname(String newGraphname) {
+		String oldGraphname = graphname;
+		graphname = newGraphname;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FRUnivCoteAzurL3IAProjectHTMLPackage.GRAPH__NAME,
-					oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET, FRUnivCoteAzurL3IAProjectHTMLPackage.GRAPH__GRAPHNAME,
+					oldGraphname, graphname));
 	}
 
 	/**
@@ -139,10 +139,10 @@ public class GraphImpl extends MinimalEObjectImpl.Container implements Graph {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case FRUnivCoteAzurL3IAProjectHTMLPackage.GRAPH__TYPE:
-			return getType();
-		case FRUnivCoteAzurL3IAProjectHTMLPackage.GRAPH__NAME:
-			return getName();
+		case FRUnivCoteAzurL3IAProjectHTMLPackage.GRAPH__GRAPHTYPE:
+			return getGraphtype();
+		case FRUnivCoteAzurL3IAProjectHTMLPackage.GRAPH__GRAPHNAME:
+			return getGraphname();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -155,11 +155,11 @@ public class GraphImpl extends MinimalEObjectImpl.Container implements Graph {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case FRUnivCoteAzurL3IAProjectHTMLPackage.GRAPH__TYPE:
-			setType((EnumType) newValue);
+		case FRUnivCoteAzurL3IAProjectHTMLPackage.GRAPH__GRAPHTYPE:
+			setGraphtype((EnumType) newValue);
 			return;
-		case FRUnivCoteAzurL3IAProjectHTMLPackage.GRAPH__NAME:
-			setName((String) newValue);
+		case FRUnivCoteAzurL3IAProjectHTMLPackage.GRAPH__GRAPHNAME:
+			setGraphname((String) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -173,11 +173,11 @@ public class GraphImpl extends MinimalEObjectImpl.Container implements Graph {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case FRUnivCoteAzurL3IAProjectHTMLPackage.GRAPH__TYPE:
-			setType(TYPE_EDEFAULT);
+		case FRUnivCoteAzurL3IAProjectHTMLPackage.GRAPH__GRAPHTYPE:
+			setGraphtype(GRAPHTYPE_EDEFAULT);
 			return;
-		case FRUnivCoteAzurL3IAProjectHTMLPackage.GRAPH__NAME:
-			setName(NAME_EDEFAULT);
+		case FRUnivCoteAzurL3IAProjectHTMLPackage.GRAPH__GRAPHNAME:
+			setGraphname(GRAPHNAME_EDEFAULT);
 			return;
 		}
 		super.eUnset(featureID);
@@ -191,10 +191,10 @@ public class GraphImpl extends MinimalEObjectImpl.Container implements Graph {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case FRUnivCoteAzurL3IAProjectHTMLPackage.GRAPH__TYPE:
-			return type != TYPE_EDEFAULT;
-		case FRUnivCoteAzurL3IAProjectHTMLPackage.GRAPH__NAME:
-			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+		case FRUnivCoteAzurL3IAProjectHTMLPackage.GRAPH__GRAPHTYPE:
+			return graphtype != GRAPHTYPE_EDEFAULT;
+		case FRUnivCoteAzurL3IAProjectHTMLPackage.GRAPH__GRAPHNAME:
+			return GRAPHNAME_EDEFAULT == null ? graphname != null : !GRAPHNAME_EDEFAULT.equals(graphname);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -210,10 +210,10 @@ public class GraphImpl extends MinimalEObjectImpl.Container implements Graph {
 			return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (type: ");
-		result.append(type);
-		result.append(", name: ");
-		result.append(name);
+		result.append(" (graphtype: ");
+		result.append(graphtype);
+		result.append(", graphname: ");
+		result.append(graphname);
 		result.append(')');
 		return result.toString();
 	}

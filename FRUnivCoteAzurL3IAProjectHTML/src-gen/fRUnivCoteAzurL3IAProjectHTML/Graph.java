@@ -13,8 +13,8 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link fRUnivCoteAzurL3IAProjectHTML.Graph#getType <em>Type</em>}</li>
- *   <li>{@link fRUnivCoteAzurL3IAProjectHTML.Graph#getName <em>Name</em>}</li>
+ *   <li>{@link fRUnivCoteAzurL3IAProjectHTML.Graph#getGraphtype <em>Graphtype</em>}</li>
+ *   <li>{@link fRUnivCoteAzurL3IAProjectHTML.Graph#getGraphname <em>Graphname</em>}</li>
  * </ul>
  *
  * @see fRUnivCoteAzurL3IAProjectHTML.FRUnivCoteAzurL3IAProjectHTMLPackage#getGraph()
@@ -23,50 +23,50 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface Graph extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Type</b></em>' attribute.
+	 * Returns the value of the '<em><b>Graphtype</b></em>' attribute.
 	 * The literals are from the enumeration {@link fRUnivCoteAzurL3IAProjectHTML.EnumType}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Type</em>' attribute.
+	 * @return the value of the '<em>Graphtype</em>' attribute.
 	 * @see fRUnivCoteAzurL3IAProjectHTML.EnumType
-	 * @see #setType(EnumType)
-	 * @see fRUnivCoteAzurL3IAProjectHTML.FRUnivCoteAzurL3IAProjectHTMLPackage#getGraph_Type()
+	 * @see #setGraphtype(EnumType)
+	 * @see fRUnivCoteAzurL3IAProjectHTML.FRUnivCoteAzurL3IAProjectHTMLPackage#getGraph_Graphtype()
 	 * @model required="true"
 	 * @generated
 	 */
-	EnumType getType();
+	EnumType getGraphtype();
 
 	/**
-	 * Sets the value of the '{@link fRUnivCoteAzurL3IAProjectHTML.Graph#getType <em>Type</em>}' attribute.
+	 * Sets the value of the '{@link fRUnivCoteAzurL3IAProjectHTML.Graph#getGraphtype <em>Graphtype</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Type</em>' attribute.
+	 * @param value the new value of the '<em>Graphtype</em>' attribute.
 	 * @see fRUnivCoteAzurL3IAProjectHTML.EnumType
-	 * @see #getType()
+	 * @see #getGraphtype()
 	 * @generated
 	 */
-	void setType(EnumType value);
+	void setGraphtype(EnumType value);
 
 	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * Returns the value of the '<em><b>Graphname</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see fRUnivCoteAzurL3IAProjectHTML.FRUnivCoteAzurL3IAProjectHTMLPackage#getGraph_Name()
+	 * @return the value of the '<em>Graphname</em>' attribute.
+	 * @see #setGraphname(String)
+	 * @see fRUnivCoteAzurL3IAProjectHTML.FRUnivCoteAzurL3IAProjectHTMLPackage#getGraph_Graphname()
 	 * @model
 	 * @generated
 	 */
-	String getName();
+	String getGraphname();
 
 	/**
-	 * Sets the value of the '{@link fRUnivCoteAzurL3IAProjectHTML.Graph#getName <em>Name</em>}' attribute.
+	 * Sets the value of the '{@link fRUnivCoteAzurL3IAProjectHTML.Graph#getGraphname <em>Graphname</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
+	 * @param value the new value of the '<em>Graphname</em>' attribute.
+	 * @see #getGraphname()
 	 * @generated
 	 */
-	void setName(String value);
+	void setGraphname(String value);
 
 } // Graph

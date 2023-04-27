@@ -13,7 +13,7 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link fRUnivCoteAzurL3IAProjectHTML.Filter#getName <em>Name</em>}</li>
+ *   <li>{@link fRUnivCoteAzurL3IAProjectHTML.Filter#getColumnname <em>Columnname</em>}</li>
  *   <li>{@link fRUnivCoteAzurL3IAProjectHTML.Filter#getAbs <em>Abs</em>}</li>
  *   <li>{@link fRUnivCoteAzurL3IAProjectHTML.Filter#getComparaison <em>Comparaison</em>}</li>
  *   <li>{@link fRUnivCoteAzurL3IAProjectHTML.Filter#getElementComparaison <em>Element Comparaison</em>}</li>
@@ -25,26 +25,26 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface Filter extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * Returns the value of the '<em><b>Columnname</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see fRUnivCoteAzurL3IAProjectHTML.FRUnivCoteAzurL3IAProjectHTMLPackage#getFilter_Name()
+	 * @return the value of the '<em>Columnname</em>' attribute.
+	 * @see #setColumnname(String)
+	 * @see fRUnivCoteAzurL3IAProjectHTML.FRUnivCoteAzurL3IAProjectHTMLPackage#getFilter_Columnname()
 	 * @model required="true"
 	 * @generated
 	 */
-	String getName();
+	String getColumnname();
 
 	/**
-	 * Sets the value of the '{@link fRUnivCoteAzurL3IAProjectHTML.Filter#getName <em>Name</em>}' attribute.
+	 * Sets the value of the '{@link fRUnivCoteAzurL3IAProjectHTML.Filter#getColumnname <em>Columnname</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
+	 * @param value the new value of the '<em>Columnname</em>' attribute.
+	 * @see #getColumnname()
 	 * @generated
 	 */
-	void setName(String value);
+	void setColumnname(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Abs</b></em>' attribute.

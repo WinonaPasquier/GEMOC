@@ -34,14 +34,14 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fRUnivCoteAzurL3IAProjectHTML.ecore#//Program/graph"/>
     </genClasses>
     <genClasses ecoreClass="fRUnivCoteAzurL3IAProjectHTML.ecore#//Graph">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fRUnivCoteAzurL3IAProjectHTML.ecore#//Graph/type"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fRUnivCoteAzurL3IAProjectHTML.ecore#//Graph/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fRUnivCoteAzurL3IAProjectHTML.ecore#//Graph/graphtype"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fRUnivCoteAzurL3IAProjectHTML.ecore#//Graph/graphname"/>
     </genClasses>
     <genClasses ecoreClass="fRUnivCoteAzurL3IAProjectHTML.ecore#//FileLoader">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fRUnivCoteAzurL3IAProjectHTML.ecore#//FileLoader/path"/>
     </genClasses>
     <genClasses ecoreClass="fRUnivCoteAzurL3IAProjectHTML.ecore#//Filter">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fRUnivCoteAzurL3IAProjectHTML.ecore#//Filter/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fRUnivCoteAzurL3IAProjectHTML.ecore#//Filter/columnname"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fRUnivCoteAzurL3IAProjectHTML.ecore#//Filter/abs"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fRUnivCoteAzurL3IAProjectHTML.ecore#//Filter/comparaison"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fRUnivCoteAzurL3IAProjectHTML.ecore#//Filter/elementComparaison"/>

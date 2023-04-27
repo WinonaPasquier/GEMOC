@@ -124,22 +124,22 @@ public interface FRUnivCoteAzurL3IAProjectHTMLPackage extends EPackage {
 	int GRAPH = 1;
 
 	/**
-	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * The feature id for the '<em><b>Graphtype</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GRAPH__TYPE = 0;
+	int GRAPH__GRAPHTYPE = 0;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * The feature id for the '<em><b>Graphname</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GRAPH__NAME = 1;
+	int GRAPH__GRAPHNAME = 1;
 
 	/**
 	 * The number of structural features of the '<em>Graph</em>' class.
@@ -207,13 +207,13 @@ public interface FRUnivCoteAzurL3IAProjectHTMLPackage extends EPackage {
 	int FILTER = 3;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * The feature id for the '<em><b>Columnname</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FILTER__NAME = 0;
+	int FILTER__COLUMNNAME = 0;
 
 	/**
 	 * The feature id for the '<em><b>Abs</b></em>' attribute.
@@ -344,26 +344,26 @@ public interface FRUnivCoteAzurL3IAProjectHTMLPackage extends EPackage {
 	EClass getGraph();
 
 	/**
-	 * Returns the meta object for the attribute '{@link fRUnivCoteAzurL3IAProjectHTML.Graph#getType <em>Type</em>}'.
+	 * Returns the meta object for the attribute '{@link fRUnivCoteAzurL3IAProjectHTML.Graph#getGraphtype <em>Graphtype</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Type</em>'.
-	 * @see fRUnivCoteAzurL3IAProjectHTML.Graph#getType()
+	 * @return the meta object for the attribute '<em>Graphtype</em>'.
+	 * @see fRUnivCoteAzurL3IAProjectHTML.Graph#getGraphtype()
 	 * @see #getGraph()
 	 * @generated
 	 */
-	EAttribute getGraph_Type();
+	EAttribute getGraph_Graphtype();
 
 	/**
-	 * Returns the meta object for the attribute '{@link fRUnivCoteAzurL3IAProjectHTML.Graph#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link fRUnivCoteAzurL3IAProjectHTML.Graph#getGraphname <em>Graphname</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see fRUnivCoteAzurL3IAProjectHTML.Graph#getName()
+	 * @return the meta object for the attribute '<em>Graphname</em>'.
+	 * @see fRUnivCoteAzurL3IAProjectHTML.Graph#getGraphname()
 	 * @see #getGraph()
 	 * @generated
 	 */
-	EAttribute getGraph_Name();
+	EAttribute getGraph_Graphname();
 
 	/**
 	 * Returns the meta object for class '{@link fRUnivCoteAzurL3IAProjectHTML.FileLoader <em>File Loader</em>}'.
@@ -397,15 +397,15 @@ public interface FRUnivCoteAzurL3IAProjectHTMLPackage extends EPackage {
 	EClass getFilter();
 
 	/**
-	 * Returns the meta object for the attribute '{@link fRUnivCoteAzurL3IAProjectHTML.Filter#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link fRUnivCoteAzurL3IAProjectHTML.Filter#getColumnname <em>Columnname</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see fRUnivCoteAzurL3IAProjectHTML.Filter#getName()
+	 * @return the meta object for the attribute '<em>Columnname</em>'.
+	 * @see fRUnivCoteAzurL3IAProjectHTML.Filter#getColumnname()
 	 * @see #getFilter()
 	 * @generated
 	 */
-	EAttribute getFilter_Name();
+	EAttribute getFilter_Columnname();
 
 	/**
 	 * Returns the meta object for the attribute '{@link fRUnivCoteAzurL3IAProjectHTML.Filter#getAbs <em>Abs</em>}'.
@@ -538,20 +538,20 @@ public interface FRUnivCoteAzurL3IAProjectHTMLPackage extends EPackage {
 		EClass GRAPH = eINSTANCE.getGraph();
 
 		/**
-		 * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Graphtype</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute GRAPH__TYPE = eINSTANCE.getGraph_Type();
+		EAttribute GRAPH__GRAPHTYPE = eINSTANCE.getGraph_Graphtype();
 
 		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Graphname</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute GRAPH__NAME = eINSTANCE.getGraph_Name();
+		EAttribute GRAPH__GRAPHNAME = eINSTANCE.getGraph_Graphname();
 
 		/**
 		 * The meta object literal for the '{@link fRUnivCoteAzurL3IAProjectHTML.impl.FileLoaderImpl <em>File Loader</em>}' class.
@@ -582,12 +582,12 @@ public interface FRUnivCoteAzurL3IAProjectHTMLPackage extends EPackage {
 		EClass FILTER = eINSTANCE.getFilter();
 
 		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Columnname</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute FILTER__NAME = eINSTANCE.getFilter_Name();
+		EAttribute FILTER__COLUMNNAME = eINSTANCE.getFilter_Columnname();
 
 		/**
 		 * The meta object literal for the '<em><b>Abs</b></em>' attribute feature.

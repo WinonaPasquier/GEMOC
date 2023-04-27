@@ -21,7 +21,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link fRUnivCoteAzurL3IAProjectHTML.impl.FilterImpl#getName <em>Name</em>}</li>
+ *   <li>{@link fRUnivCoteAzurL3IAProjectHTML.impl.FilterImpl#getColumnname <em>Columnname</em>}</li>
  *   <li>{@link fRUnivCoteAzurL3IAProjectHTML.impl.FilterImpl#getAbs <em>Abs</em>}</li>
  *   <li>{@link fRUnivCoteAzurL3IAProjectHTML.impl.FilterImpl#getComparaison <em>Comparaison</em>}</li>
  *   <li>{@link fRUnivCoteAzurL3IAProjectHTML.impl.FilterImpl#getElementComparaison <em>Element Comparaison</em>}</li>
@@ -31,24 +31,24 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  */
 public class FilterImpl extends MinimalEObjectImpl.Container implements Filter {
 	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * The default value of the '{@link #getColumnname() <em>Columnname</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
+	 * @see #getColumnname()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String NAME_EDEFAULT = null;
+	protected static final String COLUMNNAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * The cached value of the '{@link #getColumnname() <em>Columnname</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
+	 * @see #getColumnname()
 	 * @generated
 	 * @ordered
 	 */
-	protected String name = NAME_EDEFAULT;
+	protected String columnname = COLUMNNAME_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getAbs() <em>Abs</em>}' attribute.
@@ -134,8 +134,8 @@ public class FilterImpl extends MinimalEObjectImpl.Container implements Filter {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
+	public String getColumnname() {
+		return columnname;
 	}
 
 	/**
@@ -143,12 +143,12 @@ public class FilterImpl extends MinimalEObjectImpl.Container implements Filter {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
+	public void setColumnname(String newColumnname) {
+		String oldColumnname = columnname;
+		columnname = newColumnname;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FRUnivCoteAzurL3IAProjectHTMLPackage.FILTER__NAME,
-					oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					FRUnivCoteAzurL3IAProjectHTMLPackage.FILTER__COLUMNNAME, oldColumnname, columnname));
 	}
 
 	/**
@@ -226,8 +226,8 @@ public class FilterImpl extends MinimalEObjectImpl.Container implements Filter {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case FRUnivCoteAzurL3IAProjectHTMLPackage.FILTER__NAME:
-			return getName();
+		case FRUnivCoteAzurL3IAProjectHTMLPackage.FILTER__COLUMNNAME:
+			return getColumnname();
 		case FRUnivCoteAzurL3IAProjectHTMLPackage.FILTER__ABS:
 			return getAbs();
 		case FRUnivCoteAzurL3IAProjectHTMLPackage.FILTER__COMPARAISON:
@@ -246,8 +246,8 @@ public class FilterImpl extends MinimalEObjectImpl.Container implements Filter {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case FRUnivCoteAzurL3IAProjectHTMLPackage.FILTER__NAME:
-			setName((String) newValue);
+		case FRUnivCoteAzurL3IAProjectHTMLPackage.FILTER__COLUMNNAME:
+			setColumnname((String) newValue);
 			return;
 		case FRUnivCoteAzurL3IAProjectHTMLPackage.FILTER__ABS:
 			setAbs((Boolean) newValue);
@@ -270,8 +270,8 @@ public class FilterImpl extends MinimalEObjectImpl.Container implements Filter {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case FRUnivCoteAzurL3IAProjectHTMLPackage.FILTER__NAME:
-			setName(NAME_EDEFAULT);
+		case FRUnivCoteAzurL3IAProjectHTMLPackage.FILTER__COLUMNNAME:
+			setColumnname(COLUMNNAME_EDEFAULT);
 			return;
 		case FRUnivCoteAzurL3IAProjectHTMLPackage.FILTER__ABS:
 			setAbs(ABS_EDEFAULT);
@@ -294,8 +294,8 @@ public class FilterImpl extends MinimalEObjectImpl.Container implements Filter {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case FRUnivCoteAzurL3IAProjectHTMLPackage.FILTER__NAME:
-			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+		case FRUnivCoteAzurL3IAProjectHTMLPackage.FILTER__COLUMNNAME:
+			return COLUMNNAME_EDEFAULT == null ? columnname != null : !COLUMNNAME_EDEFAULT.equals(columnname);
 		case FRUnivCoteAzurL3IAProjectHTMLPackage.FILTER__ABS:
 			return ABS_EDEFAULT == null ? abs != null : !ABS_EDEFAULT.equals(abs);
 		case FRUnivCoteAzurL3IAProjectHTMLPackage.FILTER__COMPARAISON:
@@ -318,8 +318,8 @@ public class FilterImpl extends MinimalEObjectImpl.Container implements Filter {
 			return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (name: ");
-		result.append(name);
+		result.append(" (columnname: ");
+		result.append(columnname);
 		result.append(", abs: ");
 		result.append(abs);
 		result.append(", comparaison: ");

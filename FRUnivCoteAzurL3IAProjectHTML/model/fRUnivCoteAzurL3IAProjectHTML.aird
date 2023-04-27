@@ -5,7 +5,7 @@
     <semanticResources>fRUnivCoteAzurL3IAProjectHTML.genmodel</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_ZmMQgM1mEe2RxeRO3HbZSw">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Zn_nUM1mEe2RxeRO3HbZSw" name="fRUnivCoteAzurL3IAProjectHTML" repPath="#_Zn12UM1mEe2RxeRO3HbZSw" changeId="b8331d22-6754-47ca-8db1-78319c7e5129">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Zn_nUM1mEe2RxeRO3HbZSw" name="fRUnivCoteAzurL3IAProjectHTML" repPath="#_Zn12UM1mEe2RxeRO3HbZSw" changeId="043c9696-07e0-4271-b83c-eb994fda7abd">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="fRUnivCoteAzurL3IAProjectHTML.ecore#/"/>
       </ownedRepresentationDescriptors>
@@ -245,17 +245,17 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
-      <ownedElements xmi:type="diagram:DNodeListElement" uid="_bYNRoM1vEe2RxeRO3HbZSw" name="type : EnumType = line" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="fRUnivCoteAzurL3IAProjectHTML.ecore#//Graph/type"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="fRUnivCoteAzurL3IAProjectHTML.ecore#//Graph/type"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_bYNRoM1vEe2RxeRO3HbZSw" name="graphtype : EnumType = line" tooltipText="">
+        <target xmi:type="ecore:EAttribute" href="fRUnivCoteAzurL3IAProjectHTML.ecore#//Graph/graphtype"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="fRUnivCoteAzurL3IAProjectHTML.ecore#//Graph/graphtype"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_FjNe2c1wEe2RxeRO3HbZSw" labelAlignment="LEFT" description="_EmibMM1wEe2RxeRO3HbZSw">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" uid="_ng_BUM1vEe2RxeRO3HbZSw" name="name : EString" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="fRUnivCoteAzurL3IAProjectHTML.ecore#//Graph/name"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="fRUnivCoteAzurL3IAProjectHTML.ecore#//Graph/name"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_ng_BUM1vEe2RxeRO3HbZSw" name="graphname : EString" tooltipText="">
+        <target xmi:type="ecore:EAttribute" href="fRUnivCoteAzurL3IAProjectHTML.ecore#//Graph/graphname"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="fRUnivCoteAzurL3IAProjectHTML.ecore#//Graph/graphname"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_pjPM-c1vEe2RxeRO3HbZSw" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
         </ownedStyle>
@@ -291,9 +291,9 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
-      <ownedElements xmi:type="diagram:DNodeListElement" uid="_itIQwM1vEe2RxeRO3HbZSw" name="name : EString" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="fRUnivCoteAzurL3IAProjectHTML.ecore#//Filter/name"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="fRUnivCoteAzurL3IAProjectHTML.ecore#//Filter/name"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_itIQwM1vEe2RxeRO3HbZSw" name="columnname : EString" tooltipText="">
+        <target xmi:type="ecore:EAttribute" href="fRUnivCoteAzurL3IAProjectHTML.ecore#//Filter/columnname"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="fRUnivCoteAzurL3IAProjectHTML.ecore#//Filter/columnname"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_EmibMs1wEe2RxeRO3HbZSw" labelAlignment="LEFT" description="_EmibMM1wEe2RxeRO3HbZSw">
           <labelFormat>bold</labelFormat>
         </ownedStyle>

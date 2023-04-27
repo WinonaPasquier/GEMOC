@@ -193,7 +193,7 @@ public class FRUnivCoteAzurL3IAProjectHTMLPackageImpl extends EPackageImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGraph_Type() {
+	public EAttribute getGraph_Graphtype() {
 		return (EAttribute) graphEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -202,7 +202,7 @@ public class FRUnivCoteAzurL3IAProjectHTMLPackageImpl extends EPackageImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGraph_Name() {
+	public EAttribute getGraph_Graphname() {
 		return (EAttribute) graphEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -238,7 +238,7 @@ public class FRUnivCoteAzurL3IAProjectHTMLPackageImpl extends EPackageImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFilter_Name() {
+	public EAttribute getFilter_Columnname() {
 		return (EAttribute) filterEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -331,14 +331,14 @@ public class FRUnivCoteAzurL3IAProjectHTMLPackageImpl extends EPackageImpl
 		createEReference(programEClass, PROGRAM__GRAPH);
 
 		graphEClass = createEClass(GRAPH);
-		createEAttribute(graphEClass, GRAPH__TYPE);
-		createEAttribute(graphEClass, GRAPH__NAME);
+		createEAttribute(graphEClass, GRAPH__GRAPHTYPE);
+		createEAttribute(graphEClass, GRAPH__GRAPHNAME);
 
 		fileLoaderEClass = createEClass(FILE_LOADER);
 		createEAttribute(fileLoaderEClass, FILE_LOADER__PATH);
 
 		filterEClass = createEClass(FILTER);
-		createEAttribute(filterEClass, FILTER__NAME);
+		createEAttribute(filterEClass, FILTER__COLUMNNAME);
 		createEAttribute(filterEClass, FILTER__ABS);
 		createEAttribute(filterEClass, FILTER__COMPARAISON);
 		createEAttribute(filterEClass, FILTER__ELEMENT_COMPARAISON);
@@ -392,10 +392,10 @@ public class FRUnivCoteAzurL3IAProjectHTMLPackageImpl extends EPackageImpl
 				IS_ORDERED);
 
 		initEClass(graphEClass, Graph.class, "Graph", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getGraph_Type(), this.getEnumType(), "type", null, 1, 1, Graph.class, !IS_TRANSIENT,
+		initEAttribute(getGraph_Graphtype(), this.getEnumType(), "graphtype", null, 1, 1, Graph.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getGraph_Name(), ecorePackage.getEString(), "name", null, 0, 1, Graph.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getGraph_Graphname(), ecorePackage.getEString(), "graphname", null, 0, 1, Graph.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(fileLoaderEClass, FileLoader.class, "FileLoader", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -403,8 +403,8 @@ public class FRUnivCoteAzurL3IAProjectHTMLPackageImpl extends EPackageImpl
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(filterEClass, Filter.class, "Filter", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getFilter_Name(), ecorePackage.getEString(), "name", null, 1, 1, Filter.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFilter_Columnname(), ecorePackage.getEString(), "columnname", null, 1, 1, Filter.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFilter_Abs(), ecorePackage.getEBooleanObject(), "abs", null, 0, 1, Filter.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFilter_Comparaison(), this.getEnumComparaison(), "comparaison", null, 0, 1, Filter.class,
