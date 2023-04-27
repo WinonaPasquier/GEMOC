@@ -49,7 +49,7 @@ Il est egalement possible de créer un filtre sur les données. On peut voir cel
 
 
 ## Resultats des differents exemples
-### Resultat scenario 1
+### Resultat Exemple 1
 ![scenario1](pictures/scenario1.jpg)
-### Resulat scenario 2
+### Resulat Exemple 2
 ![scenario2](pictures/scenario2.jpg)
