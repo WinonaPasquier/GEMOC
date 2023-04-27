@@ -15,9 +15,9 @@ Graph {
 	graphType : bar
 	}
   ```
-*Cet synthaxe permet de generer le diagramme du scenario1*  
+*Cet synthaxe permet de generer le graphique du scenario1*  
 [Code HTML](scenario1.html)  
-[Diagramme](pictures/scenario1.png)
+[Graphique](pictures/scenario1.png)
 ### Exemple 2
 ```
 Column : 'Country',abs
@@ -30,9 +30,9 @@ Graph {
 	graphType : line
 	}
 ```
-*Cet synthaxe permet de generer le diagramme du scenario2*  
+*Cet synthaxe permet de generer le graphique du scenario2*  
 [Code HTML](scenario2.html)  
-[Diagramme](pictures/scenario2.png)
+[Graphique](pictures/scenario2.png)
 
 ## Explication de la synthaxe
 
