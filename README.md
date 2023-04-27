@@ -52,3 +52,21 @@ Il est egalement possible de créer un filtre sur les données. On peut voir cel
 
 **graphType :** le type de graphique *les differents type de graphiques sont trouvables dans le diagramme de classe dans EnumType*  
 [class Diagram](pictures/classDiag.png)
+
+## Structure BNF
+```
+<programme> ::= <colonne><fichier><graphique>
+<colonne> ::= 'Column :' <nom_colonne> (',''abs')? (<filter>)?
+<fichier> ::= 'File :' <chemin_fichier>
+<graphique> ::= Graph {' <parametres_graph> '}'
+<nom_colonne> ::= <chaine_de_caracteres>
+<filtre> ::= <comparateur><valeur>
+<comparateur> ::= '=' | '<' | '>'
+<chemin_fichier> ::= <nom_dossier>'/'<nom_fichier>'.'<extension>
+<nom_dossier> ::= <caractere>
+<nom_fichier> ::= <caractere>
+<extension> ::= 'csv'
+<parametres_graph> ::=<nom_graph><type_graph>
+<nom_graph> ::= 'graphName :' <chaine_de_caracteres>
+<type_graph> ::= 'graphType :' <type_de_graphique>
+```
