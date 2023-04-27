@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated fRUnivCoteAzurL3IAProjectHTML -->
+      <package
+            uri="http://www.example.org/fRUnivCoteAzurL3IAProjectHTML"
+            class="fRUnivCoteAzurL3IAProjectHTML.FRUnivCoteAzurL3IAProjectHTMLPackage"
+            genModel="model/fRUnivCoteAzurL3IAProjectHTML.genmodel"/>
+   </extension>
+
+</plugin>

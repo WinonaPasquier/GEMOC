@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/FRUnivCoteAzurL3IAProjectHTML/src-gen" creationIcons="false"
+    editDirectory="/FRUnivCoteAzurL3IAProjectHTML.edit/src-gen" editorDirectory="/FRUnivCoteAzurL3IAProjectHTML.editor/src-gen"
+    modelPluginID="FRUnivCoteAzurL3IAProjectHTML" modelName="FRUnivCoteAzurL3IAProjectHTML"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>fRUnivCoteAzurL3IAProjectHTML.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="FRUnivCoteAzurL3IAProjectHTML" disposableProviderFactory="true"
+      ecorePackage="fRUnivCoteAzurL3IAProjectHTML.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="fRUnivCoteAzurL3IAProjectHTML.ecore#//NewEnum1"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="fRUnivCoteAzurL3IAProjectHTML.ecore#//EnumType">
+      <genEnumLiterals ecoreEnumLiteral="fRUnivCoteAzurL3IAProjectHTML.ecore#//EnumType/line"/>
+      <genEnumLiterals ecoreEnumLiteral="fRUnivCoteAzurL3IAProjectHTML.ecore#//EnumType/bar"/>
+      <genEnumLiterals ecoreEnumLiteral="fRUnivCoteAzurL3IAProjectHTML.ecore#//EnumType/pie"/>
+      <genEnumLiterals ecoreEnumLiteral="fRUnivCoteAzurL3IAProjectHTML.ecore#//EnumType/doughnut"/>
+      <genEnumLiterals ecoreEnumLiteral="fRUnivCoteAzurL3IAProjectHTML.ecore#//EnumType/scatter"/>
+      <genEnumLiterals ecoreEnumLiteral="fRUnivCoteAzurL3IAProjectHTML.ecore#//EnumType/bubble"/>
+      <genEnumLiterals ecoreEnumLiteral="fRUnivCoteAzurL3IAProjectHTML.ecore#//EnumType/radar"/>
+      <genEnumLiterals ecoreEnumLiteral="fRUnivCoteAzurL3IAProjectHTML.ecore#//EnumType/polarArea"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="fRUnivCoteAzurL3IAProjectHTML.ecore#//EnumComparaison">
+      <genEnumLiterals ecoreEnumLiteral="fRUnivCoteAzurL3IAProjectHTML.ecore#//EnumComparaison/none"/>
+      <genEnumLiterals ecoreEnumLiteral="fRUnivCoteAzurL3IAProjectHTML.ecore#//EnumComparaison/equal"/>
+      <genEnumLiterals ecoreEnumLiteral="fRUnivCoteAzurL3IAProjectHTML.ecore#//EnumComparaison/sup"/>
+      <genEnumLiterals ecoreEnumLiteral="fRUnivCoteAzurL3IAProjectHTML.ecore#//EnumComparaison/inf"/>
+    </genEnums>
+    <genClasses ecoreClass="fRUnivCoteAzurL3IAProjectHTML.ecore#//Program">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fRUnivCoteAzurL3IAProjectHTML.ecore#//Program/filter"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fRUnivCoteAzurL3IAProjectHTML.ecore#//Program/fileloader"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fRUnivCoteAzurL3IAProjectHTML.ecore#//Program/graph"/>
+    </genClasses>
+    <genClasses ecoreClass="fRUnivCoteAzurL3IAProjectHTML.ecore#//Graph">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fRUnivCoteAzurL3IAProjectHTML.ecore#//Graph/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fRUnivCoteAzurL3IAProjectHTML.ecore#//Graph/name"/>
+    </genClasses>
+    <genClasses ecoreClass="fRUnivCoteAzurL3IAProjectHTML.ecore#//FileLoader">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fRUnivCoteAzurL3IAProjectHTML.ecore#//FileLoader/path"/>
+    </genClasses>
+    <genClasses ecoreClass="fRUnivCoteAzurL3IAProjectHTML.ecore#//Filter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fRUnivCoteAzurL3IAProjectHTML.ecore#//Filter/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fRUnivCoteAzurL3IAProjectHTML.ecore#//Filter/abs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fRUnivCoteAzurL3IAProjectHTML.ecore#//Filter/comparaison"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fRUnivCoteAzurL3IAProjectHTML.ecore#//Filter/elementComparaison"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

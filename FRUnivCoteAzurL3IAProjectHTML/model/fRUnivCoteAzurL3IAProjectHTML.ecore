@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="fRUnivCoteAzurL3IAProjectHTML" nsURI="http://www.example.org/fRUnivCoteAzurL3IAProjectHTML"
+    nsPrefix="fRUnivCoteAzurL3IAProjectHTML">
+  <eClassifiers xsi:type="ecore:EClass" name="Program">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="filter" upperBound="-1"
+        eType="#//Filter" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fileloader" lowerBound="1"
+        upperBound="-1" eType="#//FileLoader" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="graph" upperBound="-1"
+        eType="#//Graph" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Graph">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//EnumType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FileLoader">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="path" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Filter">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="abs" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="comparaison" eType="#//EnumComparaison"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="elementComparaison" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="NewEnum1"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumType">
+    <eLiterals name="line"/>
+    <eLiterals name="bar" value="1"/>
+    <eLiterals name="pie" value="2"/>
+    <eLiterals name="doughnut" value="3"/>
+    <eLiterals name="scatter" value="4"/>
+    <eLiterals name="bubble" value="5"/>
+    <eLiterals name="radar" value="6"/>
+    <eLiterals name="polarArea" value="7"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumComparaison">
+    <eLiterals name="none" value="1"/>
+    <eLiterals name="equal" value="2"/>
+    <eLiterals name="sup" value="2"/>
+    <eLiterals name="inf" value="3"/>
+  </eClassifiers>
+</ecore:EPackage>
