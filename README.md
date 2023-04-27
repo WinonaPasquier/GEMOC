@@ -42,7 +42,7 @@ Graph {
 ## Explication de la synthaxe
 
 **Column :** le nom de la colonne *il faut que le nom des colonnes soient identique au nom dans le fichier csv. Attention il ne faut pas que la colonne est un nom avec des espaces.*  
-Pour definir quelle est la colonne qui doit etre en abscisse il suffit d'ajouter **, abs** apres le nom de la colonne.  
+Pour definir quelle est la colonne qui doit etre en abscisse il suffit d'ajouter **, abs** apres le nom de la colonne. *On ne peut definir qu'une seule colonne avec l'attribut abs*  
 Il est egalement possible de créer un filtre sur les données. On peut voir cela dans l'exemple 1. Dans cette exemple les données qui seront selectionnées seront les lignes où la colonne Origin correspond à US
 
 **File :** le chemin d'acces au fichier CSV *Il faut bien respecter le format du fichier*
@@ -85,3 +85,9 @@ Il est egalement possible de créer un filtre sur les données. On peut voir cel
 `<graphname>` : représente le nom de la page.  
 `<graphtype>` : représente le type de graphique à générer.  
 [le fichier myDsl.xtext](l3IAProjectHTML/src/l3IAProjectHTML/MyDsl.xtext)
+
+## Explication code :
+
+Pour pouvoir generer notre fichier HTML on va recuperer toutes les données fournis par l'utilisateur.  
+Ensuite on va recuperer toutes les données de notre fichier csv.  
+Puis on va selectionner uniquement les données que l'on souhaite utiliser pour créer notre graphique. Ces données vont etre ajouter dans notre fichier JSON. C'est dans ce JSON où il y a toutes les données a afficher.
