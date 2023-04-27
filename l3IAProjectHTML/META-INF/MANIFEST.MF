@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: l3IAProjectHTML
+Bundle-ManifestVersion: 2
+Bundle-Name: l3IAProjectHTML
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: l3IAProjectHTML; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: FRUnivCoteAzurL3IAProjectHTML,
+ org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: l3IAProjectHTML.scoping,
+ l3IAProjectHTML.generator,
+ l3IAProjectHTML,
+ l3IAProjectHTML.validation,
+ l3IAProjectHTML.formatting2,
+ l3IAProjectHTML.services,
+ l3IAProjectHTML.parser.antlr.internal,
+ l3IAProjectHTML.parser.antlr,
+ l3IAProjectHTML.serializer
+Import-Package: org.apache.log4j
