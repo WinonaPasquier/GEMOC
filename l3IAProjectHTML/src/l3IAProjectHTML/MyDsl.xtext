@@ -15,7 +15,7 @@ Program returns Program:
 Filter returns Filter:
 	'Column' ':'
 	{Filter}
-	name=EString
+	columnname=EString
 	(','abs?='abs')?
 	(comparaison=EnumComparaison)?
 	(elementComparaison=EString)?
@@ -23,8 +23,8 @@ Filter returns Filter:
 	
 Graph returns Graph:
 	'Graph''{'
-	'graphName'':'name=EString
-	'graphType'':'type=EnumType
+	'graphName'':'graphname=EString
+	'graphType'':'graphtype=EnumType
 	'}'
 ;
 

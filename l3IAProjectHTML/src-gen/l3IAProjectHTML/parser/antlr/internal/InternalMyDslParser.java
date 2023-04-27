@@ -513,7 +513,7 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleFilter"
-    // InternalMyDsl.g:221:1: ruleFilter returns [EObject current=null] : (otherlv_0= 'Column' otherlv_1= ':' () ( (lv_name_3_0= ruleEString ) ) (otherlv_4= ',' ( (lv_abs_5_0= 'abs' ) ) )? ( (lv_comparaison_6_0= ruleEnumComparaison ) )? ( (lv_elementComparaison_7_0= ruleEString ) )? ) ;
+    // InternalMyDsl.g:221:1: ruleFilter returns [EObject current=null] : (otherlv_0= 'Column' otherlv_1= ':' () ( (lv_columnname_3_0= ruleEString ) ) (otherlv_4= ',' ( (lv_abs_5_0= 'abs' ) ) )? ( (lv_comparaison_6_0= ruleEnumComparaison ) )? ( (lv_elementComparaison_7_0= ruleEString ) )? ) ;
     public final EObject ruleFilter() throws RecognitionException {
         EObject current = null;
 
@@ -521,7 +521,7 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
         Token otherlv_1=null;
         Token otherlv_4=null;
         Token lv_abs_5_0=null;
-        AntlrDatatypeRuleToken lv_name_3_0 = null;
+        AntlrDatatypeRuleToken lv_columnname_3_0 = null;
 
         Enumerator lv_comparaison_6_0 = null;
 
@@ -532,11 +532,11 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalMyDsl.g:227:2: ( (otherlv_0= 'Column' otherlv_1= ':' () ( (lv_name_3_0= ruleEString ) ) (otherlv_4= ',' ( (lv_abs_5_0= 'abs' ) ) )? ( (lv_comparaison_6_0= ruleEnumComparaison ) )? ( (lv_elementComparaison_7_0= ruleEString ) )? ) )
-            // InternalMyDsl.g:228:2: (otherlv_0= 'Column' otherlv_1= ':' () ( (lv_name_3_0= ruleEString ) ) (otherlv_4= ',' ( (lv_abs_5_0= 'abs' ) ) )? ( (lv_comparaison_6_0= ruleEnumComparaison ) )? ( (lv_elementComparaison_7_0= ruleEString ) )? )
+            // InternalMyDsl.g:227:2: ( (otherlv_0= 'Column' otherlv_1= ':' () ( (lv_columnname_3_0= ruleEString ) ) (otherlv_4= ',' ( (lv_abs_5_0= 'abs' ) ) )? ( (lv_comparaison_6_0= ruleEnumComparaison ) )? ( (lv_elementComparaison_7_0= ruleEString ) )? ) )
+            // InternalMyDsl.g:228:2: (otherlv_0= 'Column' otherlv_1= ':' () ( (lv_columnname_3_0= ruleEString ) ) (otherlv_4= ',' ( (lv_abs_5_0= 'abs' ) ) )? ( (lv_comparaison_6_0= ruleEnumComparaison ) )? ( (lv_elementComparaison_7_0= ruleEString ) )? )
             {
-            // InternalMyDsl.g:228:2: (otherlv_0= 'Column' otherlv_1= ':' () ( (lv_name_3_0= ruleEString ) ) (otherlv_4= ',' ( (lv_abs_5_0= 'abs' ) ) )? ( (lv_comparaison_6_0= ruleEnumComparaison ) )? ( (lv_elementComparaison_7_0= ruleEString ) )? )
-            // InternalMyDsl.g:229:3: otherlv_0= 'Column' otherlv_1= ':' () ( (lv_name_3_0= ruleEString ) ) (otherlv_4= ',' ( (lv_abs_5_0= 'abs' ) ) )? ( (lv_comparaison_6_0= ruleEnumComparaison ) )? ( (lv_elementComparaison_7_0= ruleEString ) )?
+            // InternalMyDsl.g:228:2: (otherlv_0= 'Column' otherlv_1= ':' () ( (lv_columnname_3_0= ruleEString ) ) (otherlv_4= ',' ( (lv_abs_5_0= 'abs' ) ) )? ( (lv_comparaison_6_0= ruleEnumComparaison ) )? ( (lv_elementComparaison_7_0= ruleEString ) )? )
+            // InternalMyDsl.g:229:3: otherlv_0= 'Column' otherlv_1= ':' () ( (lv_columnname_3_0= ruleEString ) ) (otherlv_4= ',' ( (lv_abs_5_0= 'abs' ) ) )? ( (lv_comparaison_6_0= ruleEnumComparaison ) )? ( (lv_elementComparaison_7_0= ruleEString ) )?
             {
             otherlv_0=(Token)match(input,12,FOLLOW_7); 
 
@@ -557,17 +557,17 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalMyDsl.g:244:3: ( (lv_name_3_0= ruleEString ) )
-            // InternalMyDsl.g:245:4: (lv_name_3_0= ruleEString )
+            // InternalMyDsl.g:244:3: ( (lv_columnname_3_0= ruleEString ) )
+            // InternalMyDsl.g:245:4: (lv_columnname_3_0= ruleEString )
             {
-            // InternalMyDsl.g:245:4: (lv_name_3_0= ruleEString )
-            // InternalMyDsl.g:246:5: lv_name_3_0= ruleEString
+            // InternalMyDsl.g:245:4: (lv_columnname_3_0= ruleEString )
+            // InternalMyDsl.g:246:5: lv_columnname_3_0= ruleEString
             {
 
-            					newCompositeNode(grammarAccess.getFilterAccess().getNameEStringParserRuleCall_3_0());
+            					newCompositeNode(grammarAccess.getFilterAccess().getColumnnameEStringParserRuleCall_3_0());
             				
             pushFollow(FOLLOW_9);
-            lv_name_3_0=ruleEString();
+            lv_columnname_3_0=ruleEString();
 
             state._fsp--;
 
@@ -577,8 +577,8 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
             					}
             					set(
             						current,
-            						"name",
-            						lv_name_3_0,
+            						"columnname",
+            						lv_columnname_3_0,
             						"l3IAProjectHTML.MyDsl.EString");
             					afterParserOrEnumRuleCall();
             				
@@ -774,7 +774,7 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleGraph"
-    // InternalMyDsl.g:332:1: ruleGraph returns [EObject current=null] : (otherlv_0= 'Graph' otherlv_1= '{' otherlv_2= 'graphName' otherlv_3= ':' ( (lv_name_4_0= ruleEString ) ) otherlv_5= 'graphType' otherlv_6= ':' ( (lv_type_7_0= ruleEnumType ) ) otherlv_8= '}' ) ;
+    // InternalMyDsl.g:332:1: ruleGraph returns [EObject current=null] : (otherlv_0= 'Graph' otherlv_1= '{' otherlv_2= 'graphName' otherlv_3= ':' ( (lv_graphname_4_0= ruleEString ) ) otherlv_5= 'graphType' otherlv_6= ':' ( (lv_graphtype_7_0= ruleEnumType ) ) otherlv_8= '}' ) ;
     public final EObject ruleGraph() throws RecognitionException {
         EObject current = null;
 
@@ -785,20 +785,20 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
         Token otherlv_5=null;
         Token otherlv_6=null;
         Token otherlv_8=null;
-        AntlrDatatypeRuleToken lv_name_4_0 = null;
+        AntlrDatatypeRuleToken lv_graphname_4_0 = null;
 
-        Enumerator lv_type_7_0 = null;
+        Enumerator lv_graphtype_7_0 = null;
 
 
 
         	enterRule();
 
         try {
-            // InternalMyDsl.g:338:2: ( (otherlv_0= 'Graph' otherlv_1= '{' otherlv_2= 'graphName' otherlv_3= ':' ( (lv_name_4_0= ruleEString ) ) otherlv_5= 'graphType' otherlv_6= ':' ( (lv_type_7_0= ruleEnumType ) ) otherlv_8= '}' ) )
-            // InternalMyDsl.g:339:2: (otherlv_0= 'Graph' otherlv_1= '{' otherlv_2= 'graphName' otherlv_3= ':' ( (lv_name_4_0= ruleEString ) ) otherlv_5= 'graphType' otherlv_6= ':' ( (lv_type_7_0= ruleEnumType ) ) otherlv_8= '}' )
+            // InternalMyDsl.g:338:2: ( (otherlv_0= 'Graph' otherlv_1= '{' otherlv_2= 'graphName' otherlv_3= ':' ( (lv_graphname_4_0= ruleEString ) ) otherlv_5= 'graphType' otherlv_6= ':' ( (lv_graphtype_7_0= ruleEnumType ) ) otherlv_8= '}' ) )
+            // InternalMyDsl.g:339:2: (otherlv_0= 'Graph' otherlv_1= '{' otherlv_2= 'graphName' otherlv_3= ':' ( (lv_graphname_4_0= ruleEString ) ) otherlv_5= 'graphType' otherlv_6= ':' ( (lv_graphtype_7_0= ruleEnumType ) ) otherlv_8= '}' )
             {
-            // InternalMyDsl.g:339:2: (otherlv_0= 'Graph' otherlv_1= '{' otherlv_2= 'graphName' otherlv_3= ':' ( (lv_name_4_0= ruleEString ) ) otherlv_5= 'graphType' otherlv_6= ':' ( (lv_type_7_0= ruleEnumType ) ) otherlv_8= '}' )
-            // InternalMyDsl.g:340:3: otherlv_0= 'Graph' otherlv_1= '{' otherlv_2= 'graphName' otherlv_3= ':' ( (lv_name_4_0= ruleEString ) ) otherlv_5= 'graphType' otherlv_6= ':' ( (lv_type_7_0= ruleEnumType ) ) otherlv_8= '}'
+            // InternalMyDsl.g:339:2: (otherlv_0= 'Graph' otherlv_1= '{' otherlv_2= 'graphName' otherlv_3= ':' ( (lv_graphname_4_0= ruleEString ) ) otherlv_5= 'graphType' otherlv_6= ':' ( (lv_graphtype_7_0= ruleEnumType ) ) otherlv_8= '}' )
+            // InternalMyDsl.g:340:3: otherlv_0= 'Graph' otherlv_1= '{' otherlv_2= 'graphName' otherlv_3= ':' ( (lv_graphname_4_0= ruleEString ) ) otherlv_5= 'graphType' otherlv_6= ':' ( (lv_graphtype_7_0= ruleEnumType ) ) otherlv_8= '}'
             {
             otherlv_0=(Token)match(input,15,FOLLOW_13); 
 
@@ -816,17 +816,17 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
 
             			newLeafNode(otherlv_3, grammarAccess.getGraphAccess().getColonKeyword_3());
             		
-            // InternalMyDsl.g:356:3: ( (lv_name_4_0= ruleEString ) )
-            // InternalMyDsl.g:357:4: (lv_name_4_0= ruleEString )
+            // InternalMyDsl.g:356:3: ( (lv_graphname_4_0= ruleEString ) )
+            // InternalMyDsl.g:357:4: (lv_graphname_4_0= ruleEString )
             {
-            // InternalMyDsl.g:357:4: (lv_name_4_0= ruleEString )
-            // InternalMyDsl.g:358:5: lv_name_4_0= ruleEString
+            // InternalMyDsl.g:357:4: (lv_graphname_4_0= ruleEString )
+            // InternalMyDsl.g:358:5: lv_graphname_4_0= ruleEString
             {
 
-            					newCompositeNode(grammarAccess.getGraphAccess().getNameEStringParserRuleCall_4_0());
+            					newCompositeNode(grammarAccess.getGraphAccess().getGraphnameEStringParserRuleCall_4_0());
             				
             pushFollow(FOLLOW_15);
-            lv_name_4_0=ruleEString();
+            lv_graphname_4_0=ruleEString();
 
             state._fsp--;
 
@@ -836,8 +836,8 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
             					}
             					set(
             						current,
-            						"name",
-            						lv_name_4_0,
+            						"graphname",
+            						lv_graphname_4_0,
             						"l3IAProjectHTML.MyDsl.EString");
             					afterParserOrEnumRuleCall();
             				
@@ -855,17 +855,17 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
 
             			newLeafNode(otherlv_6, grammarAccess.getGraphAccess().getColonKeyword_6());
             		
-            // InternalMyDsl.g:383:3: ( (lv_type_7_0= ruleEnumType ) )
-            // InternalMyDsl.g:384:4: (lv_type_7_0= ruleEnumType )
+            // InternalMyDsl.g:383:3: ( (lv_graphtype_7_0= ruleEnumType ) )
+            // InternalMyDsl.g:384:4: (lv_graphtype_7_0= ruleEnumType )
             {
-            // InternalMyDsl.g:384:4: (lv_type_7_0= ruleEnumType )
-            // InternalMyDsl.g:385:5: lv_type_7_0= ruleEnumType
+            // InternalMyDsl.g:384:4: (lv_graphtype_7_0= ruleEnumType )
+            // InternalMyDsl.g:385:5: lv_graphtype_7_0= ruleEnumType
             {
 
-            					newCompositeNode(grammarAccess.getGraphAccess().getTypeEnumTypeEnumRuleCall_7_0());
+            					newCompositeNode(grammarAccess.getGraphAccess().getGraphtypeEnumTypeEnumRuleCall_7_0());
             				
             pushFollow(FOLLOW_17);
-            lv_type_7_0=ruleEnumType();
+            lv_graphtype_7_0=ruleEnumType();
 
             state._fsp--;
 
@@ -875,8 +875,8 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
             					}
             					set(
             						current,
-            						"type",
-            						lv_type_7_0,
+            						"graphtype",
+            						lv_graphtype_7_0,
             						"l3IAProjectHTML.MyDsl.EnumType");
             					afterParserOrEnumRuleCall();
             				

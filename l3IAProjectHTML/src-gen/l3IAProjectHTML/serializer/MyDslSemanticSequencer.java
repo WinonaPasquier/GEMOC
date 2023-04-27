@@ -75,7 +75,7 @@ public class MyDslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 	 *     Filter returns Filter
 	 *
 	 * Constraint:
-	 *     (name=EString abs?='abs'? comparaison=EnumComparaison? elementComparaison=EString?)
+	 *     (columnname=EString abs?='abs'? comparaison=EnumComparaison? elementComparaison=EString?)
 	 */
 	protected void sequence_Filter(ISerializationContext context, Filter semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -87,18 +87,18 @@ public class MyDslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 	 *     Graph returns Graph
 	 *
 	 * Constraint:
-	 *     (name=EString type=EnumType)
+	 *     (graphname=EString graphtype=EnumType)
 	 */
 	protected void sequence_Graph(ISerializationContext context, Graph semanticObject) {
 		if (errorAcceptor != null) {
-			if (transientValues.isValueTransient(semanticObject, FRUnivCoteAzurL3IAProjectHTMLPackage.Literals.GRAPH__NAME) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, FRUnivCoteAzurL3IAProjectHTMLPackage.Literals.GRAPH__NAME));
-			if (transientValues.isValueTransient(semanticObject, FRUnivCoteAzurL3IAProjectHTMLPackage.Literals.GRAPH__TYPE) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, FRUnivCoteAzurL3IAProjectHTMLPackage.Literals.GRAPH__TYPE));
+			if (transientValues.isValueTransient(semanticObject, FRUnivCoteAzurL3IAProjectHTMLPackage.Literals.GRAPH__GRAPHNAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, FRUnivCoteAzurL3IAProjectHTMLPackage.Literals.GRAPH__GRAPHNAME));
+			if (transientValues.isValueTransient(semanticObject, FRUnivCoteAzurL3IAProjectHTMLPackage.Literals.GRAPH__GRAPHTYPE) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, FRUnivCoteAzurL3IAProjectHTMLPackage.Literals.GRAPH__GRAPHTYPE));
 		}
 		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
-		feeder.accept(grammarAccess.getGraphAccess().getNameEStringParserRuleCall_4_0(), semanticObject.getName());
-		feeder.accept(grammarAccess.getGraphAccess().getTypeEnumTypeEnumRuleCall_7_0(), semanticObject.getType());
+		feeder.accept(grammarAccess.getGraphAccess().getGraphnameEStringParserRuleCall_4_0(), semanticObject.getGraphname());
+		feeder.accept(grammarAccess.getGraphAccess().getGraphtypeEnumTypeEnumRuleCall_7_0(), semanticObject.getGraphtype());
 		feeder.finish();
 	}
 	

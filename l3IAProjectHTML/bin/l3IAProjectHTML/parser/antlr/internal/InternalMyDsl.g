@@ -244,17 +244,17 @@ ruleFilter returns [EObject current=null]
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getFilterAccess().getNameEStringParserRuleCall_3_0());
+					newCompositeNode(grammarAccess.getFilterAccess().getColumnnameEStringParserRuleCall_3_0());
 				}
-				lv_name_3_0=ruleEString
+				lv_columnname_3_0=ruleEString
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getFilterRule());
 					}
 					set(
 						$current,
-						"name",
-						lv_name_3_0,
+						"columnname",
+						lv_columnname_3_0,
 						"l3IAProjectHTML.MyDsl.EString");
 					afterParserOrEnumRuleCall();
 				}
@@ -356,17 +356,17 @@ ruleGraph returns [EObject current=null]
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getGraphAccess().getNameEStringParserRuleCall_4_0());
+					newCompositeNode(grammarAccess.getGraphAccess().getGraphnameEStringParserRuleCall_4_0());
 				}
-				lv_name_4_0=ruleEString
+				lv_graphname_4_0=ruleEString
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getGraphRule());
 					}
 					set(
 						$current,
-						"name",
-						lv_name_4_0,
+						"graphname",
+						lv_graphname_4_0,
 						"l3IAProjectHTML.MyDsl.EString");
 					afterParserOrEnumRuleCall();
 				}
@@ -383,17 +383,17 @@ ruleGraph returns [EObject current=null]
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getGraphAccess().getTypeEnumTypeEnumRuleCall_7_0());
+					newCompositeNode(grammarAccess.getGraphAccess().getGraphtypeEnumTypeEnumRuleCall_7_0());
 				}
-				lv_type_7_0=ruleEnumType
+				lv_graphtype_7_0=ruleEnumType
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getGraphRule());
 					}
 					set(
 						$current,
-						"type",
-						lv_type_7_0,
+						"graphtype",
+						lv_graphtype_7_0,
 						"l3IAProjectHTML.MyDsl.EnumType");
 					afterParserOrEnumRuleCall();
 				}

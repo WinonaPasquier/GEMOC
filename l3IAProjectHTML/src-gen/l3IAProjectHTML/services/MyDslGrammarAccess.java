@@ -119,8 +119,8 @@ public class MyDslGrammarAccess extends AbstractElementFinder.AbstractGrammarEle
 		private final Keyword cColumnKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cColonKeyword_1 = (Keyword)cGroup.eContents().get(1);
 		private final Action cFilterAction_2 = (Action)cGroup.eContents().get(2);
-		private final Assignment cNameAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final RuleCall cNameEStringParserRuleCall_3_0 = (RuleCall)cNameAssignment_3.eContents().get(0);
+		private final Assignment cColumnnameAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final RuleCall cColumnnameEStringParserRuleCall_3_0 = (RuleCall)cColumnnameAssignment_3.eContents().get(0);
 		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
 		private final Keyword cCommaKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
 		private final Assignment cAbsAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
@@ -133,7 +133,7 @@ public class MyDslGrammarAccess extends AbstractElementFinder.AbstractGrammarEle
 		//Filter returns Filter:
 		//    'Column' ':'
 		//    {Filter}
-		//    name=EString
+		//    columnname=EString
 		//    (','abs?='abs')?
 		//    (comparaison=EnumComparaison)?
 		//    (elementComparaison=EString)?
@@ -142,7 +142,7 @@ public class MyDslGrammarAccess extends AbstractElementFinder.AbstractGrammarEle
 		
 		//'Column' ':'
 		//{Filter}
-		//name=EString
+		//columnname=EString
 		//(','abs?='abs')?
 		//(comparaison=EnumComparaison)?
 		//(elementComparaison=EString)?
@@ -157,11 +157,11 @@ public class MyDslGrammarAccess extends AbstractElementFinder.AbstractGrammarEle
 		//{Filter}
 		public Action getFilterAction_2() { return cFilterAction_2; }
 		
-		//name=EString
-		public Assignment getNameAssignment_3() { return cNameAssignment_3; }
+		//columnname=EString
+		public Assignment getColumnnameAssignment_3() { return cColumnnameAssignment_3; }
 		
 		//EString
-		public RuleCall getNameEStringParserRuleCall_3_0() { return cNameEStringParserRuleCall_3_0; }
+		public RuleCall getColumnnameEStringParserRuleCall_3_0() { return cColumnnameEStringParserRuleCall_3_0; }
 		
 		//(','abs?='abs')?
 		public Group getGroup_4() { return cGroup_4; }
@@ -194,25 +194,25 @@ public class MyDslGrammarAccess extends AbstractElementFinder.AbstractGrammarEle
 		private final Keyword cLeftCurlyBracketKeyword_1 = (Keyword)cGroup.eContents().get(1);
 		private final Keyword cGraphNameKeyword_2 = (Keyword)cGroup.eContents().get(2);
 		private final Keyword cColonKeyword_3 = (Keyword)cGroup.eContents().get(3);
-		private final Assignment cNameAssignment_4 = (Assignment)cGroup.eContents().get(4);
-		private final RuleCall cNameEStringParserRuleCall_4_0 = (RuleCall)cNameAssignment_4.eContents().get(0);
+		private final Assignment cGraphnameAssignment_4 = (Assignment)cGroup.eContents().get(4);
+		private final RuleCall cGraphnameEStringParserRuleCall_4_0 = (RuleCall)cGraphnameAssignment_4.eContents().get(0);
 		private final Keyword cGraphTypeKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		private final Keyword cColonKeyword_6 = (Keyword)cGroup.eContents().get(6);
-		private final Assignment cTypeAssignment_7 = (Assignment)cGroup.eContents().get(7);
-		private final RuleCall cTypeEnumTypeEnumRuleCall_7_0 = (RuleCall)cTypeAssignment_7.eContents().get(0);
+		private final Assignment cGraphtypeAssignment_7 = (Assignment)cGroup.eContents().get(7);
+		private final RuleCall cGraphtypeEnumTypeEnumRuleCall_7_0 = (RuleCall)cGraphtypeAssignment_7.eContents().get(0);
 		private final Keyword cRightCurlyBracketKeyword_8 = (Keyword)cGroup.eContents().get(8);
 		
 		//Graph returns Graph:
 		//    'Graph''{'
-		//    'graphName'':'name=EString
-		//    'graphType'':'type=EnumType
+		//    'graphName'':'graphname=EString
+		//    'graphType'':'graphtype=EnumType
 		//    '}'
 		//;
 		@Override public ParserRule getRule() { return rule; }
 		
 		//'Graph''{'
-		//'graphName'':'name=EString
-		//'graphType'':'type=EnumType
+		//'graphName'':'graphname=EString
+		//'graphType'':'graphtype=EnumType
 		//'}'
 		public Group getGroup() { return cGroup; }
 		
@@ -228,11 +228,11 @@ public class MyDslGrammarAccess extends AbstractElementFinder.AbstractGrammarEle
 		//':'
 		public Keyword getColonKeyword_3() { return cColonKeyword_3; }
 		
-		//name=EString
-		public Assignment getNameAssignment_4() { return cNameAssignment_4; }
+		//graphname=EString
+		public Assignment getGraphnameAssignment_4() { return cGraphnameAssignment_4; }
 		
 		//EString
-		public RuleCall getNameEStringParserRuleCall_4_0() { return cNameEStringParserRuleCall_4_0; }
+		public RuleCall getGraphnameEStringParserRuleCall_4_0() { return cGraphnameEStringParserRuleCall_4_0; }
 		
 		//'graphType'
 		public Keyword getGraphTypeKeyword_5() { return cGraphTypeKeyword_5; }
@@ -240,11 +240,11 @@ public class MyDslGrammarAccess extends AbstractElementFinder.AbstractGrammarEle
 		//':'
 		public Keyword getColonKeyword_6() { return cColonKeyword_6; }
 		
-		//type=EnumType
-		public Assignment getTypeAssignment_7() { return cTypeAssignment_7; }
+		//graphtype=EnumType
+		public Assignment getGraphtypeAssignment_7() { return cGraphtypeAssignment_7; }
 		
 		//EnumType
-		public RuleCall getTypeEnumTypeEnumRuleCall_7_0() { return cTypeEnumTypeEnumRuleCall_7_0; }
+		public RuleCall getGraphtypeEnumTypeEnumRuleCall_7_0() { return cGraphtypeEnumTypeEnumRuleCall_7_0; }
 		
 		//'}'
 		public Keyword getRightCurlyBracketKeyword_8() { return cRightCurlyBracketKeyword_8; }
@@ -513,7 +513,7 @@ public class MyDslGrammarAccess extends AbstractElementFinder.AbstractGrammarEle
 	//Filter returns Filter:
 	//    'Column' ':'
 	//    {Filter}
-	//    name=EString
+	//    columnname=EString
 	//    (','abs?='abs')?
 	//    (comparaison=EnumComparaison)?
 	//    (elementComparaison=EString)?
@@ -528,8 +528,8 @@ public class MyDslGrammarAccess extends AbstractElementFinder.AbstractGrammarEle
 	
 	//Graph returns Graph:
 	//    'Graph''{'
-	//    'graphName'':'name=EString
-	//    'graphType'':'type=EnumType
+	//    'graphName'':'graphname=EString
+	//    'graphType'':'graphtype=EnumType
 	//    '}'
 	//;
 	public GraphElements getGraphAccess() {

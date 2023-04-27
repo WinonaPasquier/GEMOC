@@ -245,7 +245,7 @@ public class MyDslGenerator extends AbstractGenerator {
   }
   
   /**
-   * Fonction qui permet de trouver l'index d'une colonne
+   * Trouver l'index d'une colonne
    * @param data La liste des données
    * @param column la colonne ou l'on veut trouver l'index
    * @return le numero de l'index
@@ -264,6 +264,14 @@ public class MyDslGenerator extends AbstractGenerator {
     return index;
   }
   
+  /**
+   * Extraire et selectionner les données en fonction des filtres sur les colonnes ou/et valeurs
+   * @param fileName le nom du fichier
+   * @param columns le nom des colonnes
+   * @param selectedData les données selectionnées
+   * @param colCompa les valeurs des colonnes ou il y a des filtres
+   * @return les données selectionnées
+   */
   public String selectData(final String fileName, final ArrayList columns, final ArrayList selectedData, final ArrayList colCompa) {
     try {
       ArrayList<String> namesCol = new ArrayList<String>();
@@ -435,12 +443,22 @@ public class MyDslGenerator extends AbstractGenerator {
     }
   }
   
+  /**
+   * Recuperer les valeurs des filtres
+   * @param fi le filtre
+   * @param columns le nom des colonnes
+   * @param columnCompa la valeur du filtre
+   * @param columnAbs la colonne avec l'attribut abs
+   * @param columnOther les colonnes qui ne sont pas abs
+   * @return
+   * le nom des colonnes
+   */
   public ArrayList filterToString(final Filter fi, final ArrayList columns, final ArrayList columnCompa, final ArrayList columnAbs, final ArrayList columnOther) {
     String compa = "";
     EnumComparaison comparaison = fi.getComparaison();
     Boolean abs = fi.getAbs();
     String elemCompa = fi.getElementComparaison();
-    String nameCol = fi.getName();
+    String nameCol = fi.getColumnname();
     boolean _notEquals = (!Objects.equal(abs, null));
     if (_notEquals) {
       columnAbs.add(nameCol);
@@ -483,6 +501,15 @@ public class MyDslGenerator extends AbstractGenerator {
     return columns;
   }
   
+  /**
+   * Recuperer les données du graph
+   * @param file le fichier
+   * @param columns le nom des colonnes
+   * @param selectData les données selectionnées
+   * @param ColumnsCop valeurs des colonnes ou il y a un filtres
+   * @return
+   * les données du graph
+   */
   public String fileToString(final FileLoader file, final ArrayList columns, final ArrayList selectData, final ArrayList ColumnsCop) {
     String res = "";
     String path = file.getPath();
@@ -491,8 +518,8 @@ public class MyDslGenerator extends AbstractGenerator {
   }
   
   public ArrayList graphToString(final Graph graph, final ArrayList graphique) {
-    graphique.add(graph.getType());
-    graphique.add(graph.getName());
+    graphique.add(graph.getGraphtype());
+    graphique.add(graph.getGraphname());
     return graphique;
   }
 }

@@ -126,7 +126,7 @@ class MyDslGenerator extends AbstractGenerator {
 	
 
 	/**
-	 * Fonction qui permet de trouver l'index d'une colonne
+	 * Trouver l'index d'une colonne
 	 * @param data La liste des données
 	 * @param column la colonne ou l'on veut trouver l'index
 	 * @return le numero de l'index
@@ -140,7 +140,14 @@ class MyDslGenerator extends AbstractGenerator {
 		}
 		return index
 	}
-	
+	/**
+	 * Extraire et selectionner les données en fonction des filtres sur les colonnes ou/et valeurs
+	 * @param fileName le nom du fichier
+	 * @param columns le nom des colonnes
+	 * @param selectedData les données selectionnées
+	 * @param colCompa les valeurs des colonnes ou il y a des filtres
+	 * @return les données selectionnées
+	 */
 	def String selectData(String fileName,ArrayList columns,ArrayList selectedData,ArrayList colCompa){
 		/**Tableau avec le noms des colonnes */
 		var namesCol = new ArrayList
@@ -176,7 +183,6 @@ class MyDslGenerator extends AbstractGenerator {
 		var i=0
 		while (i != columns.size){
 			namesCol.add(columns.get(i).toString())
-			
 			i++
 		}
 		i=0
@@ -191,6 +197,8 @@ class MyDslGenerator extends AbstractGenerator {
 			typeCol.add(data.get(1).get(indexCol.get(i)))
 			i++
 		}
+		//creation du fichier JSON
+		
 		/**le json */
 		var json="["
 		/**Tableau avec le noms des colonnes ou l'on veut creer un filtre */
@@ -209,12 +217,12 @@ class MyDslGenerator extends AbstractGenerator {
 				comparator.add(parties.get(1))
 				valueCompared.add(parties.get(2))
 				i++
-		}
+			}
 		}
 		
 
 		//Ici on commence notre boucle a 2 car il n'est pas necessaire de prendre en compte les deux premieres lignes qui sont le nom et le type de données des colonnes (que l'on a deja
-		//recuperé plus tot
+		//recuperé plus tot)
 		for (row : 2..data.size-1){
 			/**Les données de la ligne */
 			var rowData="{"
@@ -251,7 +259,7 @@ class MyDslGenerator extends AbstractGenerator {
 					}
 					
 				}
-				}
+			}
 				//On a pas d'elements de comparaison
 				else{
 					/**Compteur d'execution */
@@ -271,7 +279,7 @@ class MyDslGenerator extends AbstractGenerator {
 							rowData += ","
 						}
 						valueCpt ++
-					}
+						}
 					
 					}
 					//On verifie si on a autant de données dans la ligne qu'on est cencé avoir et si c'est notre ligne est bien remplie avec le bon nb de données
@@ -285,7 +293,16 @@ class MyDslGenerator extends AbstractGenerator {
 		json += "]"
 		return selectedData.toString
 		}
-
+		/**
+		 * Recuperer les valeurs des filtres
+		 * @param fi le filtre
+		 * @param columns le nom des colonnes
+		 * @param columnCompa la valeur du filtre
+		 * @param columnAbs la colonne avec l'attribut abs
+		 * @param columnOther les colonnes qui ne sont pas abs
+		 * @return
+		 * le nom des colonnes
+		 */
 		def filterToString(Filter fi, ArrayList columns,ArrayList columnCompa,ArrayList columnAbs, ArrayList columnOther){
 			
 			var compa=''
@@ -295,7 +312,7 @@ class MyDslGenerator extends AbstractGenerator {
 			/**La valeur de filtre */
 			var elemCompa = fi.elementComparaison
 			/**Nom de la colonne ou l'on va filtrer les données */
-			var nameCol = fi.name
+			var nameCol = fi.columnname
 			//On regarde si on a definie une colonne en tant que abcisse
 			if (abs != null){
 				columnAbs.add(nameCol)
@@ -328,6 +345,15 @@ class MyDslGenerator extends AbstractGenerator {
 			return columns
 			
 		}
+		/**
+		 * Recuperer les données du graph
+		 * @param file le fichier
+		 * @param columns le nom des colonnes
+		 * @param selectData les données selectionnées
+		 * @param ColumnsCop valeurs des colonnes ou il y a un filtres
+		 * @return
+		 * les données du graph
+		 */
 		def fileToString(FileLoader file, ArrayList columns,ArrayList selectData,ArrayList ColumnsCop){
 			var res =""
 			/**Le chemin du fichier */
@@ -336,9 +362,8 @@ class MyDslGenerator extends AbstractGenerator {
    			return res
 		}
 		def graphToString(Graph graph, ArrayList graphique) {
-			graphique.add(graph.type)
-			//graphique.add(graph.legend)
-			graphique.add(graph.name)
+			graphique.add(graph.graphtype)
+			graphique.add(graph.graphname)
 			return graphique
 			
 	}
