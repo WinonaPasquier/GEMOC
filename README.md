@@ -70,3 +70,4 @@ Il est egalement possible de créer un filtre sur les données. On peut voir cel
 <nom_graph> ::= 'graphName :' <chaine_de_caracteres>
 <type_graph> ::= 'graphType :' <type_de_graphique>
 ```
+[le fichier myDsl.xtext](l3IAProjectHTML/src/l3IAProjectHTML/MyDsl.xtext)
