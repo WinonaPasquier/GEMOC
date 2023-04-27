@@ -56,10 +56,10 @@ Il est egalement possible de créer un filtre sur les données. On peut voir cel
 ## Structure BNF
 ```
 <program> ::= <filter><file_loader><graph>
-<filter> ::= 'Column :' <nom_colonne> (','<abs>)? (<comparaison>)? (<elementComparaison>)?
-<fileloader> ::= 'File :' <chemin_fichier>
-<graph> ::= Graph {' 'graphName : '<graphName> 'graphType :' <graphType> '}'
-<nom_colonne> ::= <chaine_de_caracteres>
+<filter> ::= 'Column :' <columnname> (','<abs>)? (<comparaison>)? (<elementComparaison>)?
+<fileloader> ::= 'File :' <path>
+<graph> ::= Graph {' 'graphName : '<graphname> 'graphType :' <graphtype> '}'
+<columnname> ::= <chaine_de_caracteres>
 <abs> ::= 'true' | 'false'
 <comparaison> ::= '=' | '<' | '>'
 <elementComparaison> ::= <value>
@@ -67,14 +67,14 @@ Il est egalement possible de créer un filtre sur les données. On peut voir cel
 <nom_dossier> ::= <chaine_de_caracteres>
 <nom_fichier> ::= <chaine_de_caracteres>
 <extension> ::= 'csv'
-<graphName> ::= <chaine_de_caracteres>
-<graphType> ::= 'line'|'pie'|'doughnut'|'scatter'|'bubble'|'radar'|'polarArea'
+<graphname> ::= <chaine_de_caracteres>
+<graphtype> ::= 'line'|'pie'|'doughnut'|'scatter'|'bubble'|'radar'|'polarArea'
 ```
 `<program>` : represente l'ensemble du programme.  
 `<filter>` : représente la colonne.  
 `<fileloader>` : représente le fichier.  
 `<graph>` : représente le graphique.  
-`<nom_colonne>` : représente le nom de la colonne à afficher, suivi d'un éventuel filtre.  
+`<columnname>` : représente le nom de la colonne à afficher, suivi d'un éventuel filtre.  
 `<abs>` : représente si la colonne est en abscisse.  
 `<comparaison>` : représente l'opérateur de comparaison.  
 `<elementComparaison>` : représente la valeur de comparaison.  
@@ -82,6 +82,6 @@ Il est egalement possible de créer un filtre sur les données. On peut voir cel
 `<nom_dossier>` : représente le nom du dossier contenant le fichier.  
 `<nom_fichier>` : représente le nom du fichier de données.  
 `<extension>` : représente l'extension du fichier de données.  
-`<graphName>` : représente le nom de la page.  
-`<graphType>` : représente le type de graphique à générer.  
+`<graphname>` : représente le nom de la page.  
+`<graphtype>` : représente le type de graphique à générer.  
 [le fichier myDsl.xtext](l3IAProjectHTML/src/l3IAProjectHTML/MyDsl.xtext)
