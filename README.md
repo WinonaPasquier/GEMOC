@@ -2,7 +2,7 @@
 
 ## Exemple de syntaxe
 
-Avant de commencer il faut que l'extension du fichier soit sous la forme **myFile.projetHTML** pour pouvoir générer le fichier HTML.
+Avant de commencer il faut que l'extension du fichier soit sous la forme **myFile.projectHTML** pour pouvoir générer le fichier HTML.
 
 Pour générer notre fichier HTML il suffit de suivre la syntaxe suivante :
 
