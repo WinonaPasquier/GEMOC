@@ -1,0 +1,10 @@
+Column : 'Country',abs
+Column : 'Population'
+Column : 'Telephones'
+
+
+File : "C:/Users/winon/Documents/L3IA/S2/Langage_Et_Compilation/Projet/factbook.csv"
+Graph {
+	graphName : 'scenario2'
+	graphType : line
+	}

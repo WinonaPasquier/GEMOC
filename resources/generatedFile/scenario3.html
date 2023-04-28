@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>cereal</title>
+		</head>
+		<body>
+			<div>
+				<canvas id="myChart" style="display: block; box-sizing: border-box; height: 376px; width: 752px;" width="940" height="470"></canvas>
+			</div>
+				<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+				<script>
+
+	 	const CHART_COLORS = {
+	  		redt: 'rgba(255, 99, 132, 0.6)',
+	  		red: 'rgb(255, 99, 132)',
+	  		orange: 'rgb(255, 159, 64)',
+	  		yellow: 'rgb(255, 205, 86)',
+	  		green: 'rgb(75, 192, 192)',
+	 		bluet: 'rgba(54, 162, 235,0.6)',
+	  		blue: 'rgb(54, 162, 235)',
+	  		purple: 'rgb(153, 102, 255)',
+	  		grey: 'rgb(201, 203, 207)'
+			};
+	
+		const NAMED_COLORS = [
+	  		CHART_COLORS.red,
+	  		CHART_COLORS.orange,
+	  		CHART_COLORS.yellow,
+	  	    CHART_COLORS.green,
+	  		CHART_COLORS.blue,
+	  		CHART_COLORS.purple,
+	  		CHART_COLORS.grey,
+			];
+		const data = [{name:"100% Bran",calories:70,sugars:6,vitamins:25}, {name:"100% Natural Bran",calories:120,sugars:8,vitamins:0}, {name:"All-Bran",calories:70,sugars:5,vitamins:25}, {name:"All-Bran with Extra Fiber",calories:50,sugars:0,vitamins:25}, {name:"Almond Delight",calories:110,sugars:8,vitamins:25}, {name:"Apple Cinnamon Cheerios",calories:110,sugars:10,vitamins:25}, {name:"Apple Jacks",calories:110,sugars:14,vitamins:25}, {name:"Basic 4",calories:130,sugars:8,vitamins:25}, {name:"Bran Chex",calories:90,sugars:6,vitamins:25}, {name:"Bran Flakes",calories:90,sugars:5,vitamins:25}, {name:"Cap'n'Crunch",calories:120,sugars:12,vitamins:25}, {name:"Cheerios",calories:110,sugars:1,vitamins:25}, {name:"Cinnamon Toast Crunch",calories:120,sugars:9,vitamins:25}, {name:"Clusters",calories:110,sugars:7,vitamins:25}, {name:"Cocoa Puffs",calories:110,sugars:13,vitamins:25}, {name:"Corn Chex",calories:110,sugars:3,vitamins:25}, {name:"Corn Flakes",calories:100,sugars:2,vitamins:25}, {name:"Corn Pops",calories:110,sugars:12,vitamins:25}, {name:"Count Chocula",calories:110,sugars:13,vitamins:25}, {name:"Cracklin' Oat Bran",calories:110,sugars:7,vitamins:25}, {name:"Cream of Wheat (Quick)",calories:100,sugars:0,vitamins:0}, {name:"Crispix",calories:110,sugars:3,vitamins:25}, {name:"Crispy Wheat & Raisins",calories:100,sugars:10,vitamins:25}, {name:"Double Chex",calories:100,sugars:5,vitamins:25}, {name:"Froot Loops",calories:110,sugars:13,vitamins:25}, {name:"Frosted Flakes",calories:110,sugars:11,vitamins:25}, {name:"Frosted Mini-Wheats",calories:100,sugars:7,vitamins:25}, {name:"Fruit & Fibre Dates, Walnuts, and Oats",calories:120,sugars:10,vitamins:25}, {name:"Fruitful Bran",calories:120,sugars:12,vitamins:25}, {name:"Fruity Pebbles",calories:110,sugars:12,vitamins:25}, {name:"Golden Crisp",calories:100,sugars:15,vitamins:25}, {name:"Golden Grahams",calories:110,sugars:9,vitamins:25}, {name:"Grape Nuts Flakes",calories:100,sugars:5,vitamins:25}, {name:"Grape-Nuts",calories:110,sugars:3,vitamins:25}, {name:"Great Grains Pecan",calories:120,sugars:4,vitamins:25}, {name:"Honey Graham Ohs",calories:120,sugars:11,vitamins:25}, {name:"Honey Nut Cheerios",calories:110,sugars:10,vitamins:25}, {name:"Honey-comb",calories:110,sugars:11,vitamins:25}, {name:"Just Right Crunchy  Nuggets",calories:110,sugars:6,vitamins:100}, {name:"Just Right Fruit & Nut",calories:140,sugars:9,vitamins:100}, {name:"Kix",calories:110,sugars:3,vitamins:25}, {name:"Life",calories:100,sugars:6,vitamins:25}, {name:"Lucky Charms",calories:110,sugars:12,vitamins:25}, {name:"Maypo",calories:100,sugars:3,vitamins:25}, {name:"Muesli Raisins, Dates, & Almonds",calories:150,sugars:11,vitamins:25}, {name:"Muesli Raisins, Peaches, & Pecans",calories:150,sugars:11,vitamins:25}, {name:"Mueslix Crispy Blend",calories:160,sugars:13,vitamins:25}, {name:"Multi-Grain Cheerios",calories:100,sugars:6,vitamins:25}, {name:"Nut&Honey Crunch",calories:120,sugars:9,vitamins:25}, {name:"Nutri-Grain Almond-Raisin",calories:140,sugars:7,vitamins:25}, {name:"Nutri-grain Wheat",calories:90,sugars:2,vitamins:25}, {name:"Oatmeal Raisin Crisp",calories:130,sugars:10,vitamins:25}, {name:"Post Nat. Raisin Bran",calories:120,sugars:14,vitamins:25}, {name:"Product 19",calories:100,sugars:3,vitamins:100}, {name:"Puffed Rice",calories:50,sugars:0,vitamins:0}, {name:"Puffed Wheat",calories:50,sugars:0,vitamins:0}, {name:"Quaker Oat Squares",calories:100,sugars:6,vitamins:25}, {name:"Quaker Oatmeal",calories:100,sugars:-1,vitamins:0}, {name:"Raisin Bran",calories:120,sugars:12,vitamins:25}, {name:"Raisin Nut Bran",calories:100,sugars:8,vitamins:25}, {name:"Raisin Squares",calories:90,sugars:6,vitamins:25}, {name:"Rice Chex",calories:110,sugars:2,vitamins:25}, {name:"Rice Krispies",calories:110,sugars:3,vitamins:25}, {name:"Shredded Wheat",calories:80,sugars:0,vitamins:0}, {name:"Shredded Wheat 'n'Bran",calories:90,sugars:0,vitamins:0}, {name:"Shredded Wheat spoon size",calories:90,sugars:0,vitamins:0}, {name:"Smacks",calories:110,sugars:15,vitamins:25}, {name:"Special K",calories:110,sugars:3,vitamins:25}, {name:"Strawberry Fruit Wheats",calories:90,sugars:5,vitamins:25}, {name:"Total Corn Flakes",calories:110,sugars:3,vitamins:100}, {name:"Total Raisin Bran",calories:140,sugars:14,vitamins:100}, {name:"Total Whole Grain",calories:100,sugars:3,vitamins:100}, {name:"Triples",calories:110,sugars:3,vitamins:25}, {name:"Trix",calories:110,sugars:12,vitamins:25}, {name:"Wheat Chex",calories:100,sugars:3,vitamins:25}, {name:"Wheaties",calories:100,sugars:3,vitamins:25}, {name:"Wheaties Honey Gold",calories:110,sugars:8,vitamins:25}];
+		let Datasets =[];
+		let otherCols = ['calories', 'sugars', 'vitamins']
+		for (let i =0; i <otherCols.length;i++){
+			let columnName = otherCols[i];
+			let newDataset = {
+				label: columnName,
+				data: data.map(row => row[columnName]),
+				};
+			Datasets.push(newDataset);
+		}
+	  					new Chart(
+	    					document.getElementById('myChart'),
+	    					{
+	      					type: 'radar',
+	      					data: {
+	        					labels: data.map(row => row.name),
+	        					datasets: Datasets
+	      					}
+	    				}
+	  				);
+				</script>
+		</body>
+</html>

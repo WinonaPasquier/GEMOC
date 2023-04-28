@@ -1,0 +1,10 @@
+Column : 'Horsepower'
+Column : 'Car' ,abs
+Column : 'Origin' = 'US'
+
+
+File : "C:/Users/winon/Documents/L3IA/S2/Langage_Et_Compilation/Projet/cars.csv"
+Graph {
+	graphName : 'scenario1'
+	graphType : bar
+	}

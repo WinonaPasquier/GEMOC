@@ -1,0 +1,10 @@
+Column : 'name',abs
+Column : 'calories'
+Column : 'sugars'
+Column : 'vitamins'
+
+File : "C:/Users/winon/Documents/L3IA/S2/Langage_Et_Compilation/Projet/cereal.csv"
+Graph {
+	graphName : 'cereal'
+	graphType : radar
+	}
