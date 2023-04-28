@@ -21,8 +21,8 @@ Graph {
 	}
   ```
 *Cette syntaxe permet de générer le graphique du scenario1*  
-[Code HTML](scenario1.html)  
-[Graphique](pictures/scenario1.png)
+[Code HTML](resources/generatedFile/scenario1.html)  
+[Graphique](resources/pictures/scenario1.png)
 ### Exemple 2
 ```
 Column : 'Country',abs
@@ -36,8 +36,8 @@ Graph {
 	}
 ```
 *Cette syntaxe permet de générer le graphique du scenario2*  
-[Code HTML](scenario2.html)  
-[Graphique](pictures/scenario2.png)
+[Code HTML](resources/generatedFile/scenario2.html)  
+[Graphique](resources/pictures/scenario2.png)
 
 ## Explication de la syntaxe
 
@@ -46,12 +46,12 @@ Pour définir quelle est la colonne qui doit être en abscisse il suffit d'ajout
 Il est également possible de créer un filtre sur les données. On peut voir cela dans l'exemple 1. Dans cet exemple les données qui seront sélectionnées seront les lignes où la colonne Origin correspond à US
 
 **File :** le chemin d'accès au fichier CSV *Il faut bien respecter le format du fichier*
-[exemples de fichiers](files/)
+[exemples de fichiers](resources/files/)
 
 **graphName :** le nom de la page HTML que l'on va générer
 
 **graphType :** le type de graphique *les différents types de graphiques sont trouvables dans le diagramme de classes dans EnumType*  
-[class Diagram](pictures/classDiag.png)
+[class Diagram](resources/pictures/classDiag.png)
 
 ## Structure BNF
 ```
