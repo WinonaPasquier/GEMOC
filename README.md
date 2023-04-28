@@ -61,7 +61,7 @@ Il est également possible de créer un filtre sur les données. On peut voir ce
 <graph> ::= Graph {' 'graphName : '<graphname> 'graphType :' <graphtype> '}'
 <columnname> ::= <chaine_de_caracteres>
 <abs> ::= 'true' | 'false'
-<comparaison> ::= '=' | '<' | '>'
+<comparaison> ::= '=' | '<' | '>' | '>=' | '<=' | '!='
 <elementComparaison> ::= <value>
 <path> ::= <nom_dossier>'/'<nom_fichier>'.'<extension>
 <nom_dossier> ::= <chaine_de_caracteres>
