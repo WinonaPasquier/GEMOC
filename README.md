@@ -46,7 +46,7 @@ Pour définir quelle est la colonne qui doit être en abscisse il suffit d'ajout
 Il est également possible de créer un filtre sur les données. On peut voir cela dans l'exemple 1. Dans cet exemple les données qui seront sélectionnées seront les lignes où la colonne Origin correspond à US
 
 **File :** le chemin d'accès au fichier CSV *Il faut bien respecter le format du fichier*
-[exemples de fichiers](resources/files/)
+[exemples de fichiers](resources/csvFile/)
 
 **graphName :** le nom de la page HTML que l'on va générer
 
