@@ -41,5 +41,8 @@
     <eLiterals name="equal" value="2"/>
     <eLiterals name="sup" value="2"/>
     <eLiterals name="inf" value="3"/>
+    <eLiterals name="supEqual" value="4"/>
+    <eLiterals name="infEqual" value="5"/>
+    <eLiterals name="notEqual" value="6"/>
   </eClassifiers>
 </ecore:EPackage>

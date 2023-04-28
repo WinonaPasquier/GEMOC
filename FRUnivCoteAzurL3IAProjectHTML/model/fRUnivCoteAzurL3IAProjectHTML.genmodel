@@ -27,6 +27,9 @@
       <genEnumLiterals ecoreEnumLiteral="fRUnivCoteAzurL3IAProjectHTML.ecore#//EnumComparaison/equal"/>
       <genEnumLiterals ecoreEnumLiteral="fRUnivCoteAzurL3IAProjectHTML.ecore#//EnumComparaison/sup"/>
       <genEnumLiterals ecoreEnumLiteral="fRUnivCoteAzurL3IAProjectHTML.ecore#//EnumComparaison/inf"/>
+      <genEnumLiterals ecoreEnumLiteral="fRUnivCoteAzurL3IAProjectHTML.ecore#//EnumComparaison/supEqual"/>
+      <genEnumLiterals ecoreEnumLiteral="fRUnivCoteAzurL3IAProjectHTML.ecore#//EnumComparaison/infEqual"/>
+      <genEnumLiterals ecoreEnumLiteral="fRUnivCoteAzurL3IAProjectHTML.ecore#//EnumComparaison/notEqual"/>
     </genEnums>
     <genClasses ecoreClass="fRUnivCoteAzurL3IAProjectHTML.ecore#//Program">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fRUnivCoteAzurL3IAProjectHTML.ecore#//Program/filter"/>

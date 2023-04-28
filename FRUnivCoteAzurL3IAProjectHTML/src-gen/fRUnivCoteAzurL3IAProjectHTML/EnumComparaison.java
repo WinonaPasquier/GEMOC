@@ -55,7 +55,34 @@ public enum EnumComparaison implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	INF(3, "inf", "inf");
+	INF(3, "inf", "inf"),
+	/**
+	 * The '<em><b>Sup Equal</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	 * @see #SUP_EQUAL_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	SUP_EQUAL(4, "supEqual", "supEqual"),
+	/**
+	 * The '<em><b>Inf Equal</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	 * @see #INF_EQUAL_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	INF_EQUAL(5, "infEqual", "infEqual"),
+	/**
+	 * The '<em><b>Not Equal</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	 * @see #NOT_EQUAL_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	NOT_EQUAL(6, "notEqual", "notEqual");
 
 	/**
 	 * The '<em><b>None</b></em>' literal value.
@@ -102,12 +129,46 @@ public enum EnumComparaison implements Enumerator {
 	public static final int INF_VALUE = 3;
 
 	/**
+	 * The '<em><b>Sup Equal</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #SUP_EQUAL
+	 * @model name="supEqual"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int SUP_EQUAL_VALUE = 4;
+
+	/**
+	 * The '<em><b>Inf Equal</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #INF_EQUAL
+	 * @model name="infEqual"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int INF_EQUAL_VALUE = 5;
+
+	/**
+	 * The '<em><b>Not Equal</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #NOT_EQUAL
+	 * @model name="notEqual"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int NOT_EQUAL_VALUE = 6;
+
+	/**
 	 * An array of all the '<em><b>Enum Comparaison</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final EnumComparaison[] VALUES_ARRAY = new EnumComparaison[] { NONE, EQUAL, SUP, INF, };
+	private static final EnumComparaison[] VALUES_ARRAY = new EnumComparaison[] { NONE, EQUAL, SUP, INF, SUP_EQUAL,
+			INF_EQUAL, NOT_EQUAL, };
 
 	/**
 	 * A public read-only list of all the '<em><b>Enum Comparaison</b></em>' enumerators.
@@ -169,6 +230,12 @@ public enum EnumComparaison implements Enumerator {
 			return EQUAL;
 		case INF_VALUE:
 			return INF;
+		case SUP_EQUAL_VALUE:
+			return SUP_EQUAL;
+		case INF_EQUAL_VALUE:
+			return INF_EQUAL;
+		case NOT_EQUAL_VALUE:
+			return NOT_EQUAL;
 		}
 		return null;
 	}

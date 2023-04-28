@@ -431,6 +431,9 @@ public class FRUnivCoteAzurL3IAProjectHTMLPackageImpl extends EPackageImpl
 		addEEnumLiteral(enumComparaisonEEnum, EnumComparaison.EQUAL);
 		addEEnumLiteral(enumComparaisonEEnum, EnumComparaison.SUP);
 		addEEnumLiteral(enumComparaisonEEnum, EnumComparaison.INF);
+		addEEnumLiteral(enumComparaisonEEnum, EnumComparaison.SUP_EQUAL);
+		addEEnumLiteral(enumComparaisonEEnum, EnumComparaison.INF_EQUAL);
+		addEEnumLiteral(enumComparaisonEEnum, EnumComparaison.NOT_EQUAL);
 
 		// Create resource
 		createResource(eNS_URI);
