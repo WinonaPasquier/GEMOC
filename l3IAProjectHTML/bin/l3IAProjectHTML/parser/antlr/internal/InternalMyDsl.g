@@ -608,6 +608,30 @@ ruleEnumComparaison returns [Enumerator current=null]
 				newLeafNode(enumLiteral_3, grammarAccess.getEnumComparaisonAccess().getInfEnumLiteralDeclaration_3());
 			}
 		)
+		    |
+		(
+			enumLiteral_4='>='
+			{
+				$current = grammarAccess.getEnumComparaisonAccess().getSupEqualEnumLiteralDeclaration_4().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_4, grammarAccess.getEnumComparaisonAccess().getSupEqualEnumLiteralDeclaration_4());
+			}
+		)
+		    |
+		(
+			enumLiteral_5='<='
+			{
+				$current = grammarAccess.getEnumComparaisonAccess().getInfEqualEnumLiteralDeclaration_5().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_5, grammarAccess.getEnumComparaisonAccess().getInfEqualEnumLiteralDeclaration_5());
+			}
+		)
+		    |
+		(
+			enumLiteral_6='!='
+			{
+				$current = grammarAccess.getEnumComparaisonAccess().getNotEqualEnumLiteralDeclaration_6().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_6, grammarAccess.getEnumComparaisonAccess().getNotEqualEnumLiteralDeclaration_6());
+			}
+		)
 	)
 ;
 

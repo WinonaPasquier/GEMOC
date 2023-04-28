@@ -43,5 +43,5 @@ enum EnumType returns EnumType:
 	line='line'|bar='bar'|pie='pie'|doughnut='doughnut'|scatter ='scatter'|bubble ='bubble'|radar='radar'|polarArea='polarArea';
 
 enum EnumComparaison returns EnumComparaison:
-	none='none'|equal='='|sup='>'|inf='<';
+	none='none'|equal='='|sup='>'|inf='<'|supEqual='>='|infEqual='<='|notEqual='!=';
 

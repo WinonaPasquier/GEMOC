@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalMyDslParser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "','", "'Column'", "':'", "'abs'", "'Graph'", "'{'", "'graphName'", "'graphType'", "'}'", "'File'", "'line'", "'bar'", "'pie'", "'doughnut'", "'scatter'", "'bubble'", "'radar'", "'polarArea'", "'none'", "'='", "'>'", "'<'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "','", "'Column'", "':'", "'abs'", "'Graph'", "'{'", "'graphName'", "'graphType'", "'}'", "'File'", "'line'", "'bar'", "'pie'", "'doughnut'", "'scatter'", "'bubble'", "'radar'", "'polarArea'", "'none'", "'='", "'>'", "'<'", "'>='", "'<='", "'!='"
     };
     public static final int RULE_STRING=4;
     public static final int RULE_SL_COMMENT=8;
@@ -32,8 +32,11 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
     public static final int T__17=17;
     public static final int T__18=18;
     public static final int T__11=11;
+    public static final int T__33=33;
     public static final int T__12=12;
+    public static final int T__34=34;
     public static final int T__13=13;
+    public static final int T__35=35;
     public static final int T__14=14;
     public static final int EOF=-1;
     public static final int T__30=30;
@@ -635,7 +638,7 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
             int alt7=2;
             int LA7_0 = input.LA(1);
 
-            if ( ((LA7_0>=29 && LA7_0<=32)) ) {
+            if ( ((LA7_0>=29 && LA7_0<=35)) ) {
                 alt7=1;
             }
             switch (alt7) {
@@ -1387,7 +1390,7 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleEnumComparaison"
-    // InternalMyDsl.g:572:1: ruleEnumComparaison returns [Enumerator current=null] : ( (enumLiteral_0= 'none' ) | (enumLiteral_1= '=' ) | (enumLiteral_2= '>' ) | (enumLiteral_3= '<' ) ) ;
+    // InternalMyDsl.g:572:1: ruleEnumComparaison returns [Enumerator current=null] : ( (enumLiteral_0= 'none' ) | (enumLiteral_1= '=' ) | (enumLiteral_2= '>' ) | (enumLiteral_3= '<' ) | (enumLiteral_4= '>=' ) | (enumLiteral_5= '<=' ) | (enumLiteral_6= '!=' ) ) ;
     public final Enumerator ruleEnumComparaison() throws RecognitionException {
         Enumerator current = null;
 
@@ -1395,16 +1398,19 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
         Token enumLiteral_1=null;
         Token enumLiteral_2=null;
         Token enumLiteral_3=null;
+        Token enumLiteral_4=null;
+        Token enumLiteral_5=null;
+        Token enumLiteral_6=null;
 
 
         	enterRule();
 
         try {
-            // InternalMyDsl.g:578:2: ( ( (enumLiteral_0= 'none' ) | (enumLiteral_1= '=' ) | (enumLiteral_2= '>' ) | (enumLiteral_3= '<' ) ) )
-            // InternalMyDsl.g:579:2: ( (enumLiteral_0= 'none' ) | (enumLiteral_1= '=' ) | (enumLiteral_2= '>' ) | (enumLiteral_3= '<' ) )
+            // InternalMyDsl.g:578:2: ( ( (enumLiteral_0= 'none' ) | (enumLiteral_1= '=' ) | (enumLiteral_2= '>' ) | (enumLiteral_3= '<' ) | (enumLiteral_4= '>=' ) | (enumLiteral_5= '<=' ) | (enumLiteral_6= '!=' ) ) )
+            // InternalMyDsl.g:579:2: ( (enumLiteral_0= 'none' ) | (enumLiteral_1= '=' ) | (enumLiteral_2= '>' ) | (enumLiteral_3= '<' ) | (enumLiteral_4= '>=' ) | (enumLiteral_5= '<=' ) | (enumLiteral_6= '!=' ) )
             {
-            // InternalMyDsl.g:579:2: ( (enumLiteral_0= 'none' ) | (enumLiteral_1= '=' ) | (enumLiteral_2= '>' ) | (enumLiteral_3= '<' ) )
-            int alt11=4;
+            // InternalMyDsl.g:579:2: ( (enumLiteral_0= 'none' ) | (enumLiteral_1= '=' ) | (enumLiteral_2= '>' ) | (enumLiteral_3= '<' ) | (enumLiteral_4= '>=' ) | (enumLiteral_5= '<=' ) | (enumLiteral_6= '!=' ) )
+            int alt11=7;
             switch ( input.LA(1) ) {
             case 29:
                 {
@@ -1424,6 +1430,21 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
             case 32:
                 {
                 alt11=4;
+                }
+                break;
+            case 33:
+                {
+                alt11=5;
+                }
+                break;
+            case 34:
+                {
+                alt11=6;
+                }
+                break;
+            case 35:
+                {
+                alt11=7;
                 }
                 break;
             default:
@@ -1502,6 +1523,57 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
 
                     }
                     break;
+                case 5 :
+                    // InternalMyDsl.g:612:3: (enumLiteral_4= '>=' )
+                    {
+                    // InternalMyDsl.g:612:3: (enumLiteral_4= '>=' )
+                    // InternalMyDsl.g:613:4: enumLiteral_4= '>='
+                    {
+                    enumLiteral_4=(Token)match(input,33,FOLLOW_2); 
+
+                    				current = grammarAccess.getEnumComparaisonAccess().getSupEqualEnumLiteralDeclaration_4().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_4, grammarAccess.getEnumComparaisonAccess().getSupEqualEnumLiteralDeclaration_4());
+                    			
+
+                    }
+
+
+                    }
+                    break;
+                case 6 :
+                    // InternalMyDsl.g:620:3: (enumLiteral_5= '<=' )
+                    {
+                    // InternalMyDsl.g:620:3: (enumLiteral_5= '<=' )
+                    // InternalMyDsl.g:621:4: enumLiteral_5= '<='
+                    {
+                    enumLiteral_5=(Token)match(input,34,FOLLOW_2); 
+
+                    				current = grammarAccess.getEnumComparaisonAccess().getInfEqualEnumLiteralDeclaration_5().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_5, grammarAccess.getEnumComparaisonAccess().getInfEqualEnumLiteralDeclaration_5());
+                    			
+
+                    }
+
+
+                    }
+                    break;
+                case 7 :
+                    // InternalMyDsl.g:628:3: (enumLiteral_6= '!=' )
+                    {
+                    // InternalMyDsl.g:628:3: (enumLiteral_6= '!=' )
+                    // InternalMyDsl.g:629:4: enumLiteral_6= '!='
+                    {
+                    enumLiteral_6=(Token)match(input,35,FOLLOW_2); 
+
+                    				current = grammarAccess.getEnumComparaisonAccess().getNotEqualEnumLiteralDeclaration_6().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_6, grammarAccess.getEnumComparaisonAccess().getNotEqualEnumLiteralDeclaration_6());
+                    			
+
+                    }
+
+
+                    }
+                    break;
 
             }
 
@@ -1536,9 +1608,9 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_6 = new BitSet(new long[]{0x0000000000008000L});
     public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x0000000000002000L});
     public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000000000000030L});
-    public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x00000001E0000832L});
+    public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000000FE0000832L});
     public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x00000001E0000032L});
+    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0000000FE0000032L});
     public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x0000000000000032L});
     public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000000000010000L});
     public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x0000000000020000L});

@@ -409,12 +409,18 @@ public class MyDslGrammarAccess extends AbstractElementFinder.AbstractGrammarEle
 		private final Keyword cSupGreaterThanSignKeyword_2_0 = (Keyword)cSupEnumLiteralDeclaration_2.eContents().get(0);
 		private final EnumLiteralDeclaration cInfEnumLiteralDeclaration_3 = (EnumLiteralDeclaration)cAlternatives.eContents().get(3);
 		private final Keyword cInfLessThanSignKeyword_3_0 = (Keyword)cInfEnumLiteralDeclaration_3.eContents().get(0);
+		private final EnumLiteralDeclaration cSupEqualEnumLiteralDeclaration_4 = (EnumLiteralDeclaration)cAlternatives.eContents().get(4);
+		private final Keyword cSupEqualGreaterThanSignEqualsSignKeyword_4_0 = (Keyword)cSupEqualEnumLiteralDeclaration_4.eContents().get(0);
+		private final EnumLiteralDeclaration cInfEqualEnumLiteralDeclaration_5 = (EnumLiteralDeclaration)cAlternatives.eContents().get(5);
+		private final Keyword cInfEqualLessThanSignEqualsSignKeyword_5_0 = (Keyword)cInfEqualEnumLiteralDeclaration_5.eContents().get(0);
+		private final EnumLiteralDeclaration cNotEqualEnumLiteralDeclaration_6 = (EnumLiteralDeclaration)cAlternatives.eContents().get(6);
+		private final Keyword cNotEqualExclamationMarkEqualsSignKeyword_6_0 = (Keyword)cNotEqualEnumLiteralDeclaration_6.eContents().get(0);
 		
 		//enum EnumComparaison returns EnumComparaison:
-		//    none='none'|equal='='|sup='>'|inf='<';
+		//    none='none'|equal='='|sup='>'|inf='<'|supEqual='>='|infEqual='<='|notEqual='!=';
 		public EnumRule getRule() { return rule; }
 		
-		//none='none'|equal='='|sup='>'|inf='<'
+		//none='none'|equal='='|sup='>'|inf='<'|supEqual='>='|infEqual='<='|notEqual='!='
 		public Alternatives getAlternatives() { return cAlternatives; }
 		
 		//none='none'
@@ -440,6 +446,24 @@ public class MyDslGrammarAccess extends AbstractElementFinder.AbstractGrammarEle
 		
 		//'<'
 		public Keyword getInfLessThanSignKeyword_3_0() { return cInfLessThanSignKeyword_3_0; }
+		
+		//supEqual='>='
+		public EnumLiteralDeclaration getSupEqualEnumLiteralDeclaration_4() { return cSupEqualEnumLiteralDeclaration_4; }
+		
+		//'>='
+		public Keyword getSupEqualGreaterThanSignEqualsSignKeyword_4_0() { return cSupEqualGreaterThanSignEqualsSignKeyword_4_0; }
+		
+		//infEqual='<='
+		public EnumLiteralDeclaration getInfEqualEnumLiteralDeclaration_5() { return cInfEqualEnumLiteralDeclaration_5; }
+		
+		//'<='
+		public Keyword getInfEqualLessThanSignEqualsSignKeyword_5_0() { return cInfEqualLessThanSignEqualsSignKeyword_5_0; }
+		
+		//notEqual='!='
+		public EnumLiteralDeclaration getNotEqualEnumLiteralDeclaration_6() { return cNotEqualEnumLiteralDeclaration_6; }
+		
+		//'!='
+		public Keyword getNotEqualExclamationMarkEqualsSignKeyword_6_0() { return cNotEqualExclamationMarkEqualsSignKeyword_6_0; }
 	}
 	
 	private final ProgramElements pProgram;
@@ -583,7 +607,7 @@ public class MyDslGrammarAccess extends AbstractElementFinder.AbstractGrammarEle
 	}
 	
 	//enum EnumComparaison returns EnumComparaison:
-	//    none='none'|equal='='|sup='>'|inf='<';
+	//    none='none'|equal='='|sup='>'|inf='<'|supEqual='>='|infEqual='<='|notEqual='!=';
 	public EnumComparaisonElements getEnumComparaisonAccess() {
 		return eEnumComparaison;
 	}

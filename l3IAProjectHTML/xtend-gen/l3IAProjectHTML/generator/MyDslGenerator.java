@@ -351,44 +351,48 @@ public class MyDslGenerator extends AbstractGenerator {
           if (_equals_1) {
             int valueCpt = 0;
             filter = data.get((row).intValue()).get(this.getIndex(data, nameColCompa.get(0)));
-            Object _get = valueCompared.get(0);
-            boolean _equals_2 = Objects.equal(filter, _get);
+            String _get = comparator.get(0);
+            boolean _equals_2 = Objects.equal(_get, "=");
             if (_equals_2) {
-              int _size_1 = namesCol.size();
-              int _minus_1 = (_size_1 - 1);
-              IntegerRange _upTo_1 = new IntegerRange(0, _minus_1);
-              for (final Integer column : _upTo_1) {
-                {
-                  String value = data.get((row).intValue()).get((indexCol.get((column).intValue())).intValue());
-                  if (((!Objects.equal(value, null)) && (!value.trim().isEmpty()))) {
-                    String _lowerCase = typeCol.get((column).intValue()).toLowerCase();
-                    boolean _equals_3 = Objects.equal(_lowerCase, "string");
-                    if (_equals_3) {
-                      String _string = value.toString();
-                      String _plus = ("\"" + _string);
-                      String _plus_1 = (_plus + "\"");
-                      value = _plus_1;
+              Object _get_1 = valueCompared.get(0);
+              boolean _equals_3 = Objects.equal(filter, _get_1);
+              if (_equals_3) {
+                int _size_1 = namesCol.size();
+                int _minus_1 = (_size_1 - 1);
+                IntegerRange _upTo_1 = new IntegerRange(0, _minus_1);
+                for (final Integer column : _upTo_1) {
+                  {
+                    String value = data.get((row).intValue()).get((indexCol.get((column).intValue())).intValue());
+                    if (((!Objects.equal(value, null)) && (!value.trim().isEmpty()))) {
+                      String _lowerCase = typeCol.get((column).intValue()).toLowerCase();
+                      boolean _equals_4 = Objects.equal(_lowerCase, "string");
+                      if (_equals_4) {
+                        String _string = value.toString();
+                        String _plus = ("\"" + _string);
+                        String _plus_1 = (_plus + "\"");
+                        value = _plus_1;
+                      }
+                      String _rowData = rowData;
+                      String _get_2 = namesCol.get((column).intValue());
+                      String _plus_2 = (_get_2 + ":");
+                      String _plus_3 = (_plus_2 + value);
+                      rowData = (_rowData + _plus_3);
+                      int _size_2 = namesCol.size();
+                      int _minus_2 = (_size_2 - 1);
+                      boolean _notEquals = ((column).intValue() != _minus_2);
+                      if (_notEquals) {
+                        String _rowData_1 = rowData;
+                        rowData = (_rowData_1 + ",");
+                      }
+                      valueCpt++;
                     }
-                    String _rowData = rowData;
-                    String _get_1 = namesCol.get((column).intValue());
-                    String _plus_2 = (_get_1 + ":");
-                    String _plus_3 = (_plus_2 + value);
-                    rowData = (_rowData + _plus_3);
-                    int _size_2 = namesCol.size();
-                    int _minus_2 = (_size_2 - 1);
-                    boolean _notEquals = ((column).intValue() != _minus_2);
-                    if (_notEquals) {
-                      String _rowData_1 = rowData;
-                      rowData = (_rowData_1 + ",");
-                    }
-                    valueCpt++;
                   }
                 }
-              }
-              if (((!rowData.isEmpty()) && (valueCpt == namesCol.size()))) {
-                String _rowData = rowData;
-                rowData = (_rowData + "}");
-                selectedData.add(rowData);
+                if (((!rowData.isEmpty()) && (valueCpt == namesCol.size()))) {
+                  String _rowData = rowData;
+                  rowData = (_rowData + "}");
+                  selectedData.add(rowData);
+                }
               }
             }
           } else {
@@ -401,16 +405,16 @@ public class MyDslGenerator extends AbstractGenerator {
                 String value = data.get((row).intValue()).get((indexCol.get((column_1).intValue())).intValue());
                 if (((!Objects.equal(value, null)) && (!value.trim().isEmpty()))) {
                   String _lowerCase = typeCol.get((column_1).intValue()).toLowerCase();
-                  boolean _equals_3 = Objects.equal(_lowerCase, "string");
-                  if (_equals_3) {
+                  boolean _equals_4 = Objects.equal(_lowerCase, "string");
+                  if (_equals_4) {
                     String _string = value.toString();
                     String _plus = ("\"" + _string);
                     String _plus_1 = (_plus + "\"");
                     value = _plus_1;
                   }
                   String _rowData_1 = rowData;
-                  String _get_1 = namesCol.get((column_1).intValue());
-                  String _plus_2 = (_get_1 + ":");
+                  String _get_2 = namesCol.get((column_1).intValue());
+                  String _plus_2 = (_get_2 + ":");
                   String _plus_3 = (_plus_2 + value);
                   rowData = (_rowData_1 + _plus_3);
                   int _size_3 = namesCol.size();
@@ -486,11 +490,29 @@ public class MyDslGenerator extends AbstractGenerator {
           boolean _equals_3 = Objects.equal(_string_4, "sup");
           if (_equals_3) {
             compa = ">";
+          } else {
+            String _string_5 = comparaison.toString();
+            boolean _equals_4 = Objects.equal(_string_5, "notEqual");
+            if (_equals_4) {
+              compa = "!=";
+            } else {
+              String _string_6 = comparaison.toString();
+              boolean _equals_5 = Objects.equal(_string_6, "infEqual");
+              if (_equals_5) {
+                compa = "<=";
+              } else {
+                String _string_7 = comparaison.toString();
+                boolean _equals_6 = Objects.equal(_string_7, "supEqual");
+                if (_equals_6) {
+                  compa = ">=";
+                }
+              }
+            }
           }
         }
       }
-      String _string_5 = nameCol.toString();
-      String _plus = (_string_5 + " ");
+      String _string_8 = nameCol.toString();
+      String _plus = (_string_8 + " ");
       String _plus_1 = (_plus + compa);
       String _plus_2 = (_plus_1 + " ");
       String _plus_3 = (_plus_2 + elemCompa);

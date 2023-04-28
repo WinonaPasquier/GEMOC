@@ -234,6 +234,7 @@ class MyDslGenerator extends AbstractGenerator {
 				var valueCpt=0
 				//On recupere le nom de la colonne ou on va appliquer le filtre
 				filter = data.get(row).get(getIndex(data,nameColCompa.get(0)))
+				if (comparator.get(0) == '='){
 				if(filter == valueCompared.get(0)){
 					for (column :0..namesCol.size-1) {
 						//la valeur de la ligne et de la colonne actuelle
@@ -258,6 +259,7 @@ class MyDslGenerator extends AbstractGenerator {
 					selectedData.add(rowData)
 					}
 					
+				}
 				}
 			}
 				//On a pas d'elements de comparaison
@@ -293,6 +295,8 @@ class MyDslGenerator extends AbstractGenerator {
 		json += "]"
 		return selectedData.toString
 		}
+
+
 		/**
 		 * Recuperer les valeurs des filtres
 		 * @param fi le filtre
@@ -332,6 +336,15 @@ class MyDslGenerator extends AbstractGenerator {
 				}
 				else if(comparaison.toString=='sup'){
 					compa='>'
+				}
+				else if(comparaison.toString=='notEqual'){
+					compa='!='
+				}
+				else if (comparaison.toString=='infEqual'){
+					compa='<='
+				}
+				else if (comparaison.toString=='supEqual'){
+					compa='>='
 				}
 				//on ajoute les elements de comparations au tableau pour pouvoir les utiliser plus tard
 				columnCompa.add(nameCol.toString +' '+compa+' '+ elemCompa)
